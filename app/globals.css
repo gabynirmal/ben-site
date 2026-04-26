@@ -4,6 +4,8 @@
   --link-hover: #5a6673;
   --link-hover-opp: #b8ab9e;
   --emphasis: #62548e;
+  --chakra-fonts-heading: "franklin-gothic-atf", sans-serif;
+  --chakra-fonts-body: "franklin-gothic-atf", sans-serif;
 }
 
 :root.dark {
@@ -16,7 +18,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "franklin-gothic-atf", sans-serif;
   transition:
     background-color 0.3s ease,
     color 0.3s ease !important;
