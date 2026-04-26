@@ -9,10 +9,10 @@
 }
 
 :root.dark {
-  --background: #1d2128;
-  --foreground: #f9f0e4;
+  --background: #f9f0e4;
+  --foreground: #1d2128;
   --link-hover: #b8ab9e;
-  --link-hover-opp: #5a6673;
+  --link-hover-opp: #62548e;
 }
 
 body {

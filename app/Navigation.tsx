@@ -1,6 +1,6 @@
 "use client";
 
-import { Flex, Heading, Box, FlexProps } from "@chakra-ui/react";
+import { Flex, Heading, FlexProps } from "@chakra-ui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,9 +10,15 @@ export default function Navigation(props: FlexProps) {
   return (
     <Flex
       id="bs-navigation"
-      py="10"
-      px={{ base: "10", md: "20" }}
+      py="5"
+      px={{ base: "5", md: "10" }}
       justifyContent="space-between"
+      alignItems="flex-end"
+      position="fixed"
+      top="0"
+      left="0"
+      w="100%"
+      zIndex="docked"
       {...props}
     >
       <Link href="/">

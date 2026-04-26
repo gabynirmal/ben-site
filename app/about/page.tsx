@@ -2,8 +2,8 @@ import { Flex, Text, Grid } from "@chakra-ui/react";
 
 export default function About() {
   return (
-    <Flex id="bs-about" px={{ base: "10", md: "20" }}>
-      <Grid templateColumns="repeat(2, 1fr)" gap="6">
+    <Flex id="bs-about" py="10" px={{ base: "10", md: "20" }}>
+      <Grid templateColumns="repeat(2, 1fr)" gap="10">
         <Text as="p">
           I'm baby bruh tote bag JOMO succulents four dollar toast kickstarter
           YOLO hashtag, tumblr jianbing literally. Leggings listicle flexitarian
