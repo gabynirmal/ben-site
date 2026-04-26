@@ -1,0 +1,23 @@
+:root {
+  --background: #f9f0e4;
+  --foreground: #1d2128;
+  --link-hover: #5a6673;
+  --link-hover-opp: #b8ab9e;
+  --emphasis: #62548e;
+}
+
+:root.dark {
+  --background: #1d2128;
+  --foreground: #f9f0e4;
+  --link-hover: #b8ab9e;
+  --link-hover-opp: #5a6673;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease !important;
+}
