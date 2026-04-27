@@ -1,35 +1,48 @@
-import { Flex, Text, Grid } from "@chakra-ui/react";
+import { Box, Flex, Text, Grid } from "@chakra-ui/react";
+import Image from "next/image";
+import * as db from "../data";
+import ContactLinks from "./ContactLinks";
 
 export default function About() {
   return (
-    <Flex id="bs-about" py="10" px={{ base: "10", md: "20" }}>
-      <Grid templateColumns="repeat(2, 1fr)" gap="10">
-        <Text as="p">
-          I'm baby bruh tote bag JOMO succulents four dollar toast kickstarter
-          YOLO hashtag, tumblr jianbing literally. Leggings listicle flexitarian
-          solarpunk live-edge photo booth man braid ennui 8-bit pop-up af
-          locavore viral. Direct trade stumptown subway tile master cleanse,
-          8-bit tilde mukbang taxidermy. Mumblecore shoreditch hoodie skateboard
-          hella listicle. Offal chartreuse biodiesel meggings etsy franzen,
-          vibecession grailed sustainable Brooklyn. Umami paleo freegan seitan
-          tilde raclette wayfarers fanny pack blog hoodie kombucha venmo narwhal
-          kogi. Man braid grailed tousled craft beer celiac pour-over lo-fi.
-          Fanny pack retro taxidermy pour-over, shabby chic cray authentic
-          butcher 3 wolf moon gentrify. Polaroid hexagon beard, cardigan
-          wayfarers heirloom food truck cray hashtag normcore. Lumbersexual pork
-          belly pour-over, JOMO ennui meditation fam ascot bitters kombucha
-          humblebrag tofu. Taiyaki intelligentsia street art XOXO art party
-          retro kickstarter. Mumblecore same food truck yes plz gorpcore
-          authentic. Cliche same grailed, affogato retro meditation etsy food
-          truck wolf pabst hella. Artisan YOLO meggings XOXO wayfarers hoodie
-          disrupt truffaut. Bespoke echo park fashion axe selvage yes plz. Hell
-          of offal keytar mumblecore vaporware fit single-origin coffee
-          glossier, meditation vibecession crucifix disrupt bespoke direct
-          trade. Fit pickled twee subway tile schlitz, trust fund craft beer
-          pour-over flexitarian small batch narwhal kale chips tofu. Try-hard
-          humblebrag semiotics squid drinking vinegar, actually cardigan.
-        </Text>
+    <>
+      {/* Background Image */}
+      <Flex position="absolute" top="0" left="0" w="100vw" h="100vh">
+        <Image
+          src="/photography/IMG_4243.JPG"
+          alt="Image of Benjamin Smith on Mount Olympus"
+          fill
+          style={{ objectFit: "cover", objectPosition: "center 30%" }}
+          priority
+        />
+      </Flex>
+
+      {/* Grid overlay */}
+      <Grid
+        templateColumns="repeat(3, 1fr)"
+        gap="40px"
+        position="absolute"
+        w="100%"
+        h="100vh"
+        p="10"
+      >
+        {/* First column - text */}
+        <Flex flexDirection="column" pb="20px" justifyContent="flex-end">
+          <Text as="p" textStyle="2xl" color="var(--background)">
+            Marxism consectetur pour-over, taiyaki etsy eiusmod paleo narwhal
+            non offal tattooed. Mukbang chicharrones af gochujang palo santo
+            poutine tousled gorpcore iPhone taxidermy lyft.
+            <br />
+            <br />
+            Wolf messenger bag four dollar toast pinterest live-edge excepteur
+            VHS stumptown af art party distillery raw denim id artisan. Kombucha
+            selvage freegan laborum kitsch DIY food truck pork belly. Austin
+            deserunt edison bulb whatever, iceland banjo in. Godard af quis,
+            vice ugh shaman 8-bit laboris jianbing.
+          </Text>
+          <ContactLinks mt="6" />
+        </Flex>
       </Grid>
-    </Flex>
+    </>
   );
 }

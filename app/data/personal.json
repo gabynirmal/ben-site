@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Crochet Flower Crown",
+    "image": "penny-headband/pennyLeft1.png",
+    "link": "/personal/crochet-flower-crown",
+    "alt": "Dog with Crochet Flower Crown"
+  },
+  {
+    "title": "Painted Bottles",
+    "image": "bottles/BottlesPainting.jpeg",
+    "link": "/personal/bottles",
+    "alt": "Painting of Bottles"
+  },
+  {
+    "title": "Crocheted Clouds",
+    "image": "cloud-crochet/cloudnoback.png",
+    "link": "/personal/bottles",
+    "alt": "Painting of Bottles"
+  },
+  {
+    "title": "Bjork Vector Art",
+    "image": "bjork/Homework3VectorArt.png",
+    "link": "/personal/bjork",
+    "alt": "Vector Art of Bjokr"
+  }
+]
