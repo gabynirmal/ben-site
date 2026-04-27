@@ -4,7 +4,7 @@ import * as db from "../data";
 
 export default function Design() {
   const design = db.design;
-  const gallerySpacing = "40px";
+  const gallerySpacing = "30px";
   return (
     <>
       {/* Header Image */}
@@ -18,10 +18,22 @@ export default function Design() {
       >
         <Image
           src="/design/learning-the-hard-way/duotoneFace.png"
-          alt="Photoshopped Image of Architectural Model"
+          alt="Photoshopped Image of Ben Smith"
           fill
           style={{ objectFit: "cover", objectPosition: "center 20%" }}
-          priority
+          loading="eager"
+        />
+        <Image
+          src="/design/learning-the-hard-way/duotoneFaceNoBackground.png"
+          alt="Photoshopped Image of Ben Smith"
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "center 20%",
+            zIndex: "50",
+            pointerEvents: "none",
+          }}
+          loading="eager"
         />
       </Flex>
 

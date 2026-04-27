@@ -10,8 +10,8 @@ export default function Navigation(props: FlexProps) {
   return (
     <Flex
       id="bs-navigation"
-      py="5"
-      px={{ base: "5", md: "10" }}
+      py="15px"
+      px={{ base: "4", md: "30px" }}
       justifyContent="space-between"
       alignItems="flex-end"
       position="fixed"
@@ -23,7 +23,7 @@ export default function Navigation(props: FlexProps) {
     >
       <Link href="/">
         <Heading
-          size="4xl"
+          size="3xl"
           color={pathname === "/" ? "var(--emphasis)" : "var(--foreground)"}
           _hover={
             pathname === "/"
@@ -35,11 +35,11 @@ export default function Navigation(props: FlexProps) {
           Benjamin Smith
         </Heading>
       </Link>
-      <Flex gap="10" display={{ base: "none", md: "flex" }}>
+      <Flex gap="8" display={{ base: "none", md: "flex" }}>
         {navigation.map((link: string) => (
           <Link href={`/${link.toLowerCase()}`} key={link}>
             <Heading
-              size="2xl"
+              size="xl"
               color={
                 pathname.includes(link.toLowerCase())
                   ? "var(--emphasis)"

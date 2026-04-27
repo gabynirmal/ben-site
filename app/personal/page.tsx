@@ -4,7 +4,7 @@ import * as db from "../data";
 
 export default function Personal() {
   const personal = db.personal;
-  const gallerySpacing = "40px";
+  const gallerySpacing = "30px";
   return (
     <>
       {/* Header Image */}
@@ -20,8 +20,11 @@ export default function Personal() {
           src="/personal/bottles/BottlesPainting.jpeg"
           alt="Photoshopped Image of Architectural Model"
           fill
-          style={{ objectFit: "cover", objectPosition: "center 20%" }}
-          priority
+          style={{
+            objectFit: "cover",
+            objectPosition: "center 20%",
+          }}
+          loading="eager"
         />
       </Flex>
 

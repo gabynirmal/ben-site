@@ -11,14 +11,14 @@ export default function ContactLinks(props: FlexProps) {
       <Flex
         alignItems="center"
         justifyContent="center"
-        boxSize="80px"
+        boxSize="60px"
         borderRadius="full"
         bgColor="var(--link-hover)"
         _hover={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
         transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
       >
         <Link href="resume.pdf" target="_blank">
-          <Icon boxSize="3rem">
+          <Icon boxSize="2rem">
             <IoDocumentTextOutline />
           </Icon>
         </Link>
@@ -26,14 +26,14 @@ export default function ContactLinks(props: FlexProps) {
       <Flex
         alignItems="center"
         justifyContent="center"
-        boxSize="80px"
+        boxSize="60px"
         borderRadius="full"
         bgColor="var(--link-hover)"
         _hover={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
         transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
       >
         <Link href="mailto:smith.benj@northeastern.edu" target="_blank">
-          <Icon boxSize="3rem">
+          <Icon boxSize="2rem">
             <MdMailOutline />
           </Icon>
         </Link>
@@ -41,7 +41,7 @@ export default function ContactLinks(props: FlexProps) {
       <Flex
         alignItems="center"
         justifyContent="center"
-        boxSize="80px"
+        boxSize="60px"
         borderRadius="full"
         bgColor="var(--link-hover)"
         _hover={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
@@ -51,7 +51,7 @@ export default function ContactLinks(props: FlexProps) {
           href="https://www.linkedin.com/in/benjamin-smith125/"
           target="_blank"
         >
-          <Icon boxSize="2rem">
+          <Icon boxSize="1.5rem">
             <FaLinkedinIn />
           </Icon>
         </Link>

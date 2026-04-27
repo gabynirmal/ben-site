@@ -13,7 +13,7 @@ export default function About() {
           alt="Image of Benjamin Smith on Mount Olympus"
           fill
           style={{ objectFit: "cover", objectPosition: "center 30%" }}
-          priority
+          loading="eager"
         />
       </Flex>
 
@@ -28,7 +28,7 @@ export default function About() {
       >
         {/* First column - text */}
         <Flex flexDirection="column" pb="20px" justifyContent="flex-end">
-          <Text as="p" textStyle="2xl" color="var(--background)">
+          <Text as="p" color="var(--background)">
             Marxism consectetur pour-over, taiyaki etsy eiusmod paleo narwhal
             non offal tattooed. Mukbang chicharrones af gochujang palo santo
             poutine tousled gorpcore iPhone taxidermy lyft.

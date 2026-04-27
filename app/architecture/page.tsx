@@ -4,7 +4,7 @@ import * as db from "../data";
 
 export default function Architecture() {
   const arch = db.arch;
-  const gallerySpacing = "40px";
+  const gallerySpacing = "30px";
   return (
     <>
       {/* Header Image */}
@@ -21,7 +21,7 @@ export default function Architecture() {
           alt="Photoshopped Image of Architectural Model"
           fill
           style={{ objectFit: "cover", objectPosition: "center 20%" }}
-          priority
+          loading="eager"
         />
       </Flex>
 

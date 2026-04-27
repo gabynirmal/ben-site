@@ -17,7 +17,7 @@ export default function Home() {
           alt="Photoshopped Image of Architectural Model"
           fill
           style={{ objectFit: "cover" }}
-          priority
+          loading="eager"
         />
       </Flex>
     </>
