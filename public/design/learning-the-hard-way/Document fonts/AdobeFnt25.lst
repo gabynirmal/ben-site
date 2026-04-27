@@ -1,0 +1,65 @@
+%!Adobe-FontList 1.25
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/bensmith/Desktop/Algoritmic GD/07 Benjamin Folder/Document fonts/AdobeFnt25.lst
+FileLength:1210
+FileModTime:798352929
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Gotham-Bold
+FamilyName:Gotham
+StyleName:Bold
+MenuName:Gotham
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Gotham Bold
+WritingScript:Roman
+OutlineFileName:/Users/bensmith/Desktop/Algoritmic GD/07 Benjamin Folder/Document fonts/Gotham-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:166968
+FileModTime:331920000
+NameArray:0,Mac,18,Gotham Bold
+NameArray:0,Mac,4,Gotham Bold
+NameArray:0,Win,1,Gotham
+NameArray:0,Win,16,Gotham
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SatoshiVariable-Bold
+FamilyName:Satoshi Variable
+StyleName:Bold
+MenuName:Satoshi Variable
+FamilyPrefix:SatoshiVariable
+StyleBits:2
+WeightClass:900
+WidthClass:5
+AngleClass:0
+FullName:Satoshi Variable Bold
+WritingScript:Roman
+OutlineFileName:/Users/bensmith/Desktop/Algoritmic GD/07 Benjamin Folder/Document fonts/Satoshi-Variable.ttf
+DataFormat:sfntData
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:TrueTypeVariableFont
+FileLength:127420
+FileModTime:797313133
+NameArray:0,Win,1,Satoshi Variable
+%EndFont
+

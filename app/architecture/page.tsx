@@ -1,5 +1,4 @@
-import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
-import { FaMapPin } from "react-icons/fa";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import Image from "next/image";
 import * as db from "../data";
 
@@ -69,7 +68,7 @@ export default function Architecture() {
               justifyContent="center"
               zIndex={1}
             >
-              <Heading size="2xl" color="white">
+              <Heading size="2xl" color="white" textAlign="center" p="20px">
                 {project.title}
               </Heading>
             </Box>
