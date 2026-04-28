@@ -3,11 +3,12 @@
     "title": "Learning the Hard Way",
     "image": "learning-the-hard-way/fullSpread.png",
     "link": "/design/learning-the-hard-way",
-    "alt": "Dutone Face Spread"
+    "alt": "Dutone Face Spread",
+    "colSpan": 2
   },
   {
     "title": "Essence Of Boston",
-    "image": "essence-of-boston/GDFINAL1.27.257.png",
+    "image": "essence-of-boston/GDFINAL1.27.25.png",
     "link": "/design/essence-of-boston",
     "alt": "Page Smoke from Essence of Boston Spread"
   },
@@ -19,7 +20,7 @@
   },
   {
     "title": "Sketchbook of landscape studies and semi-relevant thoughts and anecdotes",
-    "image": "sketchbook/TravelSketchbook9.png",
+    "image": "sketchbook/CoverandBackPageBookAfterFeedback2.png",
     "link": "/design/sketchbook",
     "alt": "Drawing of the Boston Symphony Orchestra"
   },

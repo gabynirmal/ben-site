@@ -1,10 +1,14 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
+"use client";
+
+import { Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import * as db from "../data";
+import Masonry from "@/components/ui/masonry/Masonry";
+import { useState } from "react";
 
 export default function Architecture() {
-  const arch = db.arch;
-  const gallerySpacing = "30px";
+  const architecture = db.architecture;
+  const [loaded, setLoaded] = useState(false);
   return (
     <>
       {/* Header Image */}
@@ -20,61 +24,21 @@ export default function Architecture() {
           src="/architecture/bpl-library/LibrarySiteEntranceRender.png"
           alt="Photoshopped Image of Architectural Model"
           fill
-          style={{ objectFit: "cover", objectPosition: "center 20%" }}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center 20%",
+            opacity: loaded ? 1 : 0,
+            transition: "opacity 1s ease",
+          }}
           loading="eager"
+          onLoad={() => setLoaded(true)}
         />
       </Flex>
 
       {/* Spacer */}
       <Flex h="100vh" />
 
-      <Box
-        p={gallerySpacing}
-        css={{
-          columnCount: 3,
-          columnGap: gallerySpacing,
-        }}
-      >
-        {arch.map((project) => (
-          <Box
-            position="relative"
-            overflow="hidden"
-            _hover={{ "& .overlay": { opacity: 1 } }}
-            key={project.link}
-            mb={gallerySpacing}
-            css={{ breakInside: "avoid" }}
-          >
-            <Image
-              src={`/architecture/${project.image}`}
-              alt={project.alt}
-              width={900}
-              height={900}
-              style={{ width: "100%", height: "auto", display: "block" }}
-            />
-
-            {/* Dark overlay + title on hover */}
-            <Box
-              className="overlay"
-              position="absolute"
-              top="0"
-              left="0"
-              w="100%"
-              h="100%"
-              bg="blackAlpha.600"
-              opacity={0}
-              transition="opacity 0.3s ease"
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              zIndex={1}
-            >
-              <Heading size="2xl" color="white" textAlign="center" p="20px">
-                {project.title}
-              </Heading>
-            </Box>
-          </Box>
-        ))}
-      </Box>
+      <Masonry db={architecture} folder="architecture" />
     </>
   );
 }

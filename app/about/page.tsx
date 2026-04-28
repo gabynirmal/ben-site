@@ -1,9 +1,12 @@
-import { Box, Flex, Text, Grid } from "@chakra-ui/react";
+"use client";
+
+import { Flex, Text, Grid } from "@chakra-ui/react";
 import Image from "next/image";
-import * as db from "../data";
 import ContactLinks from "./ContactLinks";
+import { useState } from "react";
 
 export default function About() {
+  const [loaded, setLoaded] = useState(false);
   return (
     <>
       {/* Background Image */}
@@ -12,8 +15,14 @@ export default function About() {
           src="/photography/IMG_4243.JPG"
           alt="Image of Benjamin Smith on Mount Olympus"
           fill
-          style={{ objectFit: "cover", objectPosition: "center 30%" }}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center 30%",
+            opacity: loaded ? 1 : 0,
+            transition: "opacity 1s ease",
+          }}
           loading="eager"
+          onLoad={() => setLoaded(true)}
         />
       </Flex>
 

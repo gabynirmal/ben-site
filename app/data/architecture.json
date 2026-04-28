@@ -12,15 +12,15 @@
     "alt": "Bathroom Close Up"
   },
   {
-    "title": "Double House",
-    "image": "double-house/AngleImage.png",
-    "link": "/architecture/double-house",
-    "alt": "Double House Angled Image"
-  },
-  {
     "title": "Masonry Cavity Wall",
     "image": "cavity-wall/FinalCavityWall.png",
     "link": "/architecture/cavity-wall",
     "alt": "Masonry Cavity Wall"
+  },
+  {
+    "title": "Double House",
+    "image": "double-house/AngleImage.png",
+    "link": "/architecture/double-house",
+    "alt": "Double House Angled Image"
   }
 ]

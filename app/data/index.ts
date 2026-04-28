@@ -1,5 +1,5 @@
-import arch from "./arch.json";
+import architecture from "./architecture.json";
 import design from "./design.json";
 import personal from "./personal.json";
 
-export { arch, design, personal };
+export { architecture, design, personal };
