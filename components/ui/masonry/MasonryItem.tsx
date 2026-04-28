@@ -11,6 +11,7 @@ export default function MasonryItem({
   colSpan?: number;
 }) {
   const [rowSpan, setRowSpan] = useState(1);
+  const [visible, setVisible] = useState(false);
   const ROW_HEIGHT = 10;
   const GAP = 30;
   const itemRef = useRef<HTMLDivElement>(null);
@@ -26,34 +27,56 @@ export default function MasonryItem({
     const el = itemRef.current;
     if (!el) return;
 
-    // Wait for all images inside to load
     const images = el.querySelectorAll("img");
     let loaded = 0;
     if (images.length === 0) {
       calculateSpan();
-      return;
-    }
-
-    images.forEach((img) => {
-      if (img.complete) {
-        loaded++;
-        if (loaded === images.length) calculateSpan();
-      } else {
-        img.addEventListener("load", () => {
+    } else {
+      images.forEach((img) => {
+        if (img.complete) {
           loaded++;
           if (loaded === images.length) calculateSpan();
-        });
-      }
-    });
+        } else {
+          img.addEventListener("load", () => {
+            loaded++;
+            if (loaded === images.length) calculateSpan();
+          });
+        }
+      });
+    }
 
-    const observer = new ResizeObserver(calculateSpan);
-    observer.observe(el);
-    return () => observer.disconnect();
+    const resizeObserver = new ResizeObserver(calculateSpan);
+    resizeObserver.observe(el);
+
+    const intersectionObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          intersectionObserver.disconnect();
+        }
+      },
+      { threshold: 0.1 },
+    );
+    intersectionObserver.observe(el);
+
+    return () => {
+      resizeObserver.disconnect();
+      intersectionObserver.disconnect();
+    };
   }, []);
 
   return (
     <GridItem rowSpan={rowSpan} colSpan={colSpan}>
-      <div ref={itemRef}>{children}</div>
+      <div
+        ref={itemRef}
+        style={{
+          opacity: visible ? 1 : 0,
+          transform: visible ? "translateY(0)" : "translateY(20px)",
+          transition: "opacity 0.6s ease, transform 0.6s ease",
+        }}
+      >
+        {children}
+      </div>
     </GridItem>
   );
 }

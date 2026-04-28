@@ -3,10 +3,16 @@
 import { Flex, Text, Grid } from "@chakra-ui/react";
 import Image from "next/image";
 import ContactLinks from "./ContactLinks";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function About() {
-  const [loaded, setLoaded] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       {/* Background Image */}
@@ -18,11 +24,8 @@ export default function About() {
           style={{
             objectFit: "cover",
             objectPosition: "center 30%",
-            opacity: loaded ? 1 : 0,
-            transition: "opacity 1s ease",
           }}
           loading="eager"
-          onLoad={() => setLoaded(true)}
         />
       </Flex>
 
@@ -36,7 +39,14 @@ export default function About() {
         p="10"
       >
         {/* First column - text */}
-        <Flex flexDirection="column" pb="20px" justifyContent="flex-end">
+        <Flex
+          flexDirection="column"
+          pb="20px"
+          justifyContent="flex-end"
+          opacity={isVisible ? 1 : 0}
+          transform={isVisible ? "translateY(0)" : "translateY(20px)"}
+          transition="opacity 0.6s ease, transform 0.6s ease"
+        >
           <Text as="p" color="var(--background)">
             Marxism consectetur pour-over, taiyaki etsy eiusmod paleo narwhal
             non offal tattooed. Mukbang chicharrones af gochujang palo santo

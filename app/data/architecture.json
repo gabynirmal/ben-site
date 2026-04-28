@@ -3,7 +3,8 @@
     "title": "The Stacks: Boston Chinatown Library",
     "image": "bpl-library/Outside1_8SiteEntrance.png",
     "link": "/architecture/chinatown-library",
-    "alt": "Library Site Entrance Render"
+    "alt": "Library Site Entrance Render",
+    "colSpan": 2
   },
   {
     "title": "The New Chinatown Backyard",
