@@ -43,7 +43,6 @@ export default function Design() {
             whiteSpace: "pre-wrap",
             wordBreak: "break-all",
             position: "absolute",
-
             left: 0,
             width: "100%",
             top: "62px",

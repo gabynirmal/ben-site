@@ -13,7 +13,11 @@ export default function Masonry({ db, folder }: { db: any[]; folder: string }) {
       rowGap="0px"
     >
       {db.map((project) => (
-        <MasonryItem key={project.link} colSpan={project.colSpan}>
+        <MasonryItem
+          key={project.link}
+          colSpan={project.colSpan}
+          link={project.link}
+        >
           <Box
             position="relative"
             overflow="hidden"

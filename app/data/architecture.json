@@ -4,13 +4,105 @@
     "image": "bpl-library/Outside1_8SiteEntrance.png",
     "link": "/architecture/chinatown-library",
     "alt": "Library Site Entrance Render",
-    "colSpan": 2
+    "colSpan": 2,
+    "gallery": [
+      {
+        "image": "bpl-library/Outside1_8SiteEntrance.png",
+        "alt": "1/8 Scale Site Entrance"
+      },
+      {
+        "image": "bpl-library/1_8Front.png",
+        "alt": "Front"
+      },
+      {
+        "image": "bpl-library/1_8RightAxon.png",
+        "alt": "Right Axon"
+      },
+      { "image": "bpl-library/1_8LeftSide.png", "alt": "Left Side" },
+      {
+        "image": "bpl-library/1_8Top.png",
+        "alt": "Top"
+      },
+      {
+        "image": "bpl-library/1_8InsideScaleFigure.png",
+        "alt": "Inside Figure"
+      },
+      {
+        "image": "bpl-library/InsideBack.png",
+        "alt": "Inside Back"
+      },
+      {
+        "image": "bpl-library/InsideLobby.png",
+        "alt": "Inside Lobby"
+      },
+      {
+        "image": "bpl-library/MassingLeftAxonNoBackground.png",
+        "alt": "Massing Left Axon"
+      },
+      {
+        "image": "bpl-library/MassingRIghtAxonNoBackground.png",
+        "alt": "Massing Right Axon "
+      },
+      {
+        "image": "bpl-library/LibraryASectionPerspective.png",
+        "alt": "Library Section A Perspective",
+        "colSpan": 2
+      },
+
+      {
+        "image": "bpl-library/LibraryBSectionPerspective.png",
+        "alt": "Library Section B Perspective",
+        "colSpan": 2
+      },
+      {
+        "image": "bpl-library/LibraryPlans-01.png",
+        "alt": "Library Plans"
+      },
+      {
+        "image": "bpl-library/LibraryPlans-02.png",
+        "alt": "Library Plans"
+      },
+      {
+        "image": "bpl-library/LibraryPlans-03.png",
+        "alt": "Library Plans"
+      },
+      {
+        "image": "bpl-library/LibraryPlans-04.png",
+        "alt": "Library Plans"
+      },
+      {
+        "image": "bpl-library/LibraryPlans-05.png",
+        "alt": "Library Plans"
+      },
+      {
+        "image": "bpl-library/LibraryPlans-06.png",
+        "alt": "Library Plans"
+      }
+    ]
   },
   {
     "title": "The New Chinatown Backyard",
     "image": "bpl-bathroom/BathroomPerspective.jpeg",
     "link": "/architecture/chinatown-bathroom",
-    "alt": "Bathroom Close Up"
+    "alt": "Bathroom Close Up",
+    "gallery": [
+      {
+        "image": "bpl-bathroom/BathroomTopView.png",
+        "alt": "Bathroom Model Top View"
+      },
+      {
+        "image": "bpl-bathroom/BathroomPerspective3.jpeg",
+        "alt": "Bathroom Model Garden Perspective"
+      },
+      {
+        "image": "bpl-bathroom/BathroomPerspective.jpeg",
+        "alt": "Bathroom Model Front View"
+      },
+      {
+        "image": "bpl-bathroom/BathroomPerspective2NoBack.png",
+        "alt": "Bathroom Model Entrance"
+      }
+    ]
   },
   {
     "title": "Masonry Cavity Wall",

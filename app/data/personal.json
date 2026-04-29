@@ -22,5 +22,11 @@
     "image": "bjork/Homework3VectorArt.png",
     "link": "/personal/bjork",
     "alt": "Vector Art of Bjokr"
+  },
+  {
+    "title": "Crocheted Jerry Garcia Tapestry",
+    "image": "jerry/JerryGarciaTapestry.png",
+    "link": "/personal/jerry",
+    "alt": "Crocheted Jerry Garcia Tapestry"
   }
 ]

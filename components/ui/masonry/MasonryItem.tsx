@@ -2,12 +2,15 @@
 
 import { useState, useRef, useEffect } from "react";
 import { GridItem } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function MasonryItem({
   children,
+  link,
   colSpan = 1,
 }: {
   children: React.ReactNode;
+  link?: string;
   colSpan?: number;
 }) {
   const [rowSpan, setRowSpan] = useState(1);
@@ -65,18 +68,22 @@ export default function MasonryItem({
     };
   }, []);
 
+  const inner = (
+    <div
+      ref={itemRef}
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(20px)",
+        transition: "opacity 0.6s ease, transform 0.6s ease",
+      }}
+    >
+      {children}
+    </div>
+  );
+
   return (
     <GridItem rowSpan={rowSpan} colSpan={colSpan}>
-      <div
-        ref={itemRef}
-        style={{
-          opacity: visible ? 1 : 0,
-          transform: visible ? "translateY(0)" : "translateY(20px)",
-          transition: "opacity 0.6s ease, transform 0.6s ease",
-        }}
-      >
-        {children}
-      </div>
+      {link ? <Link href={link}>{inner}</Link> : inner}
     </GridItem>
   );
 }
