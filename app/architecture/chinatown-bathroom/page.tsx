@@ -24,7 +24,8 @@ export default function ChinatownBathroom() {
           h="100%"
           w="100%"
         >
-          <GridItem position="relative" rowSpan={2} colSpan={2}>
+          <GridItem position="relative" colSpan={2}>
+            {" "}
             <Flex
               h="100%"
               w="100"
@@ -36,7 +37,6 @@ export default function ChinatownBathroom() {
               TBD
             </Flex>
           </GridItem>
-
           <GridItem rowSpan={3} position="relative">
             <Flex
               h="100%"
@@ -49,7 +49,6 @@ export default function ChinatownBathroom() {
               TBD
             </Flex>
           </GridItem>
-
           <GridItem colSpan={2}>
             <Flex justifyContent="space-between" pb="15px">
               <Heading size="2xl">The Chinatown Backyard</Heading>
@@ -89,10 +88,10 @@ export default function ChinatownBathroom() {
             </Text>
           </GridItem>
 
-          <GridItem colSpan={2} />
+          <GridItem position="relative" rowSpan={2} colSpan={2} />
         </Grid>
 
-        {/* Elevation anchored to bottom of this section */}
+        {/* Bathroom of this section */}
         <Box
           position="absolute"
           bottom={0}
@@ -103,10 +102,10 @@ export default function ChinatownBathroom() {
           zIndex="banner"
         >
           <Image
-            src="/architecture/bpl-library/LibraryElevationDiagramNoBack.png"
+            src="/architecture/bpl-bathroom/NoBackbathroomFront.png"
             fill
             alt="Library Elevation Diagram"
-            style={{ objectFit: "contain", objectPosition: "bottom" }}
+            style={{ objectFit: "contain", objectPosition: "bottom center" }}
             loading="eager"
           />
         </Box>

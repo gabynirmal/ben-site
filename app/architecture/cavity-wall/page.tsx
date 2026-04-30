@@ -48,6 +48,7 @@ export default function CavityWall() {
               loading="eager"
               width={900}
               height={900}
+              style={{ marginLeft: "auto" }}
             />
           </GridItem>
         </Grid>
