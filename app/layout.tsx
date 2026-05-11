@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Provider } from "@/components/ui/provider";
 import "./globals.css";
 import Navigation from "./Navigation";
+import AboutDev from "./about/AboutDev";
 
 export const metadata: Metadata = {
   title: "Benjamin Smith",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <Provider>
           <Navigation />
+          <AboutDev />
           {children}
         </Provider>
       </body>

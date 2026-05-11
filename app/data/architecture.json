@@ -77,6 +77,10 @@
       {
         "image": "bpl-library/LibraryPlans-06.png",
         "alt": "Library Plans"
+      },
+      {
+        "image": "bpl-library/LibrarySitePlan.png",
+        "alt": "LibrarySitePlan"
       }
     ]
   },
@@ -88,7 +92,8 @@
     "gallery": [
       {
         "image": "bpl-bathroom/BathroomTopView.png",
-        "alt": "Bathroom Model Top View"
+        "alt": "Bathroom Model Top View",
+        "colSpan": 2
       },
       {
         "image": "bpl-bathroom/BathroomPerspective3.jpeg",
@@ -101,6 +106,11 @@
       {
         "image": "bpl-bathroom/BathroomPerspective2NoBack.png",
         "alt": "Bathroom Model Entrance"
+      },
+      {
+        "image": "bpl-bathroom/NoBackbathroomFront.png",
+        "alt": "NoBackbathroomFront",
+        "colSpan": 2
       }
     ]
   },
@@ -114,6 +124,88 @@
     "title": "Double House",
     "image": "double-house/AngleImage.png",
     "link": "/architecture/double-house",
-    "alt": "Double House Angled Image"
+    "alt": "Double House Angled Image",
+    "gallery": [
+      {
+        "image": "double-house/FinalRefinedDHDrawings-01.png",
+        "alt": "FinalRefinedDHDrawings-01"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-02.png",
+        "alt": "FinalRefinedDHDrawings-02"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-03.png",
+        "alt": "FinalRefinedDHDrawings-03"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-04.png",
+        "alt": "FinalRefinedDHDrawings-04"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-05.png",
+        "alt": "FinalRefinedDHDrawings-05"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-06.png",
+        "alt": "FinalRefinedDHDrawings-06"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-07.png",
+        "alt": "FinalRefinedDHDrawings-07"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-08.png",
+        "alt": "FinalRefinedDHDrawings-08"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-09.png",
+        "alt": "FinalRefinedDHDrawings-09"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-10.png",
+        "alt": "FinalRefinedDHDrawings-10"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-11.png",
+        "alt": "FinalRefinedDHDrawings-11"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-12.png",
+        "alt": "FinalRefinedDHDrawings-12"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-13.png",
+        "alt": "FinalRefinedDHDrawings-13"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-14.png",
+        "alt": "FinalRefinedDHDrawings-14"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-15.png",
+        "alt": "FinalRefinedDHDrawings-15"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-16.png",
+        "alt": "FinalRefinedDHDrawings-16"
+      },
+      {
+        "image": "double-house/FrontImage.png",
+        "alt": "FrontImage"
+      },
+      {
+        "image": "double-house/TwinHouseUpclose.png",
+        "alt": "TwinHouseUpclose"
+      },
+      {
+        "image": "double-house/AngleImage.png",
+        "alt": "AngleImage"
+      },
+      {
+        "image": "double-house/AstronomerCloseUpImage.png",
+        "alt": "AstronomerCloseUpImage"
+      }
+    ]
   }
 ]

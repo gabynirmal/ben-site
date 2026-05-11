@@ -1,5 +1,5 @@
 :root {
-  --background: #f9f0e4;
+  --background: #f0f0f0;
   --foreground: #1d2128;
   --link-hover: #5a6673;
   --link-hover-opp: #b8ab9e;
@@ -9,10 +9,10 @@
 }
 
 :root.dark {
-  --background: #f9f0e4;
+  --background: #f0f0f0;
   --foreground: #1d2128;
-  --link-hover: #b8ab9e;
-  --link-hover-opp: #62548e;
+  --link-hover: #5a6673;
+  --link-hover-opp: #b8ab9e;
 }
 
 body {

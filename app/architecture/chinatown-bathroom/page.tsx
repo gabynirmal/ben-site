@@ -111,7 +111,7 @@ export default function ChinatownBathroom() {
         </Box>
       </Box>
 
-      <Box pb="165px">
+      <Box>
         <Masonry db={thisProject?.gallery ?? []} folder="architecture" />
       </Box>
     </>

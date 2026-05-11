@@ -1,20 +1,34 @@
 [
   {
     "title": "Crochet Flower Crown",
-    "image": "penny-headband/pennyleft1.png",
-    "link": "/personal/crochet-flower-crown",
-    "alt": "Dog with Crochet Flower Crown"
+    "image": "penny-crochet/Pennyfront.png",
+    "link": "/personal/penny-crochet",
+    "alt": "Dog with Crochet Flower Crown",
+    "gallery": [
+      {
+        "image": "penny-crochet/pennyleft2.png",
+        "alt": "pennyleft2"
+      },
+      {
+        "image": "penny-crochet/Pennyright1.png",
+        "alt": "Pennyright1"
+      },
+      {
+        "image": "penny-crochet/Pennyright2.png",
+        "alt": "Pennyright2"
+      }
+    ]
   },
   {
     "title": "Painted Bottles",
     "image": "bottles/BottlesPainting.jpeg",
-    "link": "/personal/bottles",
+    "link": "/personal/painted-bottles",
     "alt": "Painting of Bottles"
   },
   {
     "title": "Crocheted Clouds",
     "image": "cloud-crochet/cloudnoback.png",
-    "link": "/personal/crocheted-clouds",
+    "link": "/personal/cloud-crochet",
     "alt": "Crocheted Clouds"
   },
   {

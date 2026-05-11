@@ -4,7 +4,7 @@ import { Flex, Text, Grid, Icon, Popover, Portal } from "@chakra-ui/react";
 import Image from "next/image";
 import ContactLinks from "./ContactLinks";
 import { useState, useEffect } from "react";
-import { MdComputer } from "react-icons/md";
+import AboutDev from "./AboutDev";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,46 +28,6 @@ export default function About() {
           }}
           loading="eager"
         />
-
-        <Popover.Root>
-          <Popover.Trigger asChild>
-            <Flex
-              zIndex="banner"
-              position="absolute"
-              bottom="20px"
-              right="20px"
-              alignItems="center"
-              justifyContent="center"
-              boxSize="40px"
-              borderRadius="full"
-              bgColor="var(--link-hover)"
-              _hover={{
-                bgColor: "var(--foreground)",
-                color: "var(--link-hover)",
-              }}
-              transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
-            >
-              <Icon boxSize="1.5rem">
-                <MdComputer />
-              </Icon>
-            </Flex>
-          </Popover.Trigger>
-          <Portal>
-            <Popover.Positioner>
-              <Popover.Content zIndex={"banner"} bgColor="var(--link-hover)">
-                <Popover.Body color="var(--background)">
-                  <Popover.Title fontWeight="medium">
-                    About The Dev
-                  </Popover.Title>
-                  <Text>
-                    Gabriela Nirmal created this website with React, Typescript,
-                    & Chakra UI
-                  </Text>
-                </Popover.Body>
-              </Popover.Content>
-            </Popover.Positioner>
-          </Portal>
-        </Popover.Root>
       </Flex>
 
       {/* Grid overlay */}

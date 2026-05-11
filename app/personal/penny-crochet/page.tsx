@@ -4,10 +4,10 @@ import Image from "next/image";
 import * as db from "../../data";
 import Link from "next/link";
 
-export default function DoubleHouse() {
-  const architecture = db.architecture;
-  const thisProject = architecture.find(
-    (p) => p.link === "/architecture/double-house",
+export default function PennyCrochet() {
+  const personal = db.personal;
+  const thisProject = personal.find(
+    (p) => p.link === "/personal/penny-crochet",
   );
 
   return (
@@ -23,37 +23,14 @@ export default function DoubleHouse() {
           h="100%"
           w="100%"
         >
-          <GridItem position="relative" rowSpan={2} colSpan={2}>
-            <Image
-              src="/architecture/double-house/FinalRefinedDHDrawings-10.png"
-              fill
-              style={{ objectFit: "cover", objectPosition: "center 10%" }}
-              alt="Library Site Plan"
-              loading="eager"
-            />
-          </GridItem>
-
-          <GridItem rowSpan={3} position="relative">
-            <Image
-              src="/architecture/double-house/FinalRefinedDHDrawings-06.png"
-              fill
-              style={{ objectFit: "cover" }}
-              alt="Library Site Plan"
-              loading="eager"
-            />
-          </GridItem>
-
-          <GridItem colSpan={2}>
+          <GridItem colSpan={1} rowSpan={3}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">The Compound</Heading>
+              <Heading size="2xl">Crochet Flower Crown</Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
-                2025 | Double House
+                2023 | Crochet
               </Text>
             </Flex>
-            <Link
-              href="https://maps.app.goo.gl/P7J1p7ck8cX9CxF37?g_st=i&utm_campaign=ac-im"
-              target="_blank"
-            ></Link>
+
             <Text as="p" textStyle="xl">
               Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
               Post-ironic thundercats supper club, garum whatever bikepacking
@@ -63,11 +40,29 @@ export default function DoubleHouse() {
               Gatekeep blackbird spyplane marxism listening bar.
             </Text>
           </GridItem>
+          <GridItem rowSpan={3} position="relative">
+            <Image
+              src="/personal/penny-crochet/Pennyfront.png"
+              fill
+              style={{ objectFit: "cover" }}
+              alt="Pennyfront"
+              loading="eager"
+            />
+          </GridItem>{" "}
+          <GridItem rowSpan={3} position="relative">
+            <Image
+              src="/personal/penny-crochet/pennyleft1.png"
+              fill
+              style={{ objectFit: "cover" }}
+              alt="pennyleft1"
+              loading="eager"
+            />
+          </GridItem>
         </Grid>
       </Box>
 
       <Box>
-        <Masonry db={thisProject?.gallery ?? []} folder="architecture" />
+        <Masonry db={thisProject?.gallery ?? []} folder="personal" />
       </Box>
     </>
   );
