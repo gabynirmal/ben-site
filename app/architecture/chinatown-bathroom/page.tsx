@@ -79,12 +79,23 @@ export default function ChinatownBathroom() {
               </Flex>
             </Link>
             <Text as="p" textStyle="xl">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              Chinatown Backyard is a free, publicly funded community garden
+              where residents can socialize, learn about local plants and
+              ecosystems, and access public restrooms without any obligation to
+              spend money.
+              <br />
+              <br />
+              The two restroom structures are wrapped in stacked, curving panels
+              that act as privacy screens angled so that occupants can see out,
+              but passersby cannot see in. The front face of each structure is
+              clad in glass brick, and a glass-and-steel dome crowns the roof,
+              keeping users connected to the sky overhead.
+              <br />
+              <br />
+              S-shaped dividers wrap around the two structures, continuing the
+              language of the curving screen while guiding the flow of visitors
+              across the site, linking the two structures and mediating movement
+              from one side of the garden to the other.
             </Text>
           </GridItem>
 
@@ -99,7 +110,6 @@ export default function ChinatownBathroom() {
           w="100%"
           h="100%"
           pointerEvents="none"
-          zIndex="banner"
         >
           <Image
             src="/architecture/bpl-bathroom/NoBackbathroomFront.png"

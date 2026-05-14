@@ -2,7 +2,6 @@ import { Flex, Icon, FlexProps } from "@chakra-ui/react";
 import Link from "next/link";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { FaLinkedinIn } from "react-icons/fa6";
-import { IoLogoGithub } from "react-icons/io";
 import { MdMailOutline } from "react-icons/md";
 
 export default function ContactLinks(props: FlexProps) {

@@ -61,7 +61,7 @@ export default function Design() {
           style={{
             objectFit: "cover",
             objectPosition: "center 20%",
-            zIndex: "50",
+            zIndex: "60",
             pointerEvents: "none",
           }}
         />

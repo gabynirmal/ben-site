@@ -1,7 +1,8 @@
 "use client";
 
-import { Flex, Heading, FlexProps } from "@chakra-ui/react";
+import { Flex, Heading, FlexProps, Box } from "@chakra-ui/react";
 import Link from "next/link";
+import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
 
 export default function Navigation(props: FlexProps) {
@@ -57,6 +58,9 @@ export default function Navigation(props: FlexProps) {
           </Link>
         ))}
       </Flex>
+      <Box display={{ base: "block", md: "none" }}>
+        <MobileNav />
+      </Box>
     </Flex>
   );
 }

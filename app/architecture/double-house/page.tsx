@@ -55,12 +55,29 @@ export default function DoubleHouse() {
               target="_blank"
             ></Link>
             <Text as="p" textStyle="xl">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              This compound explores the concept of multi-family living by
+              designing two distinct homes around the personalities and needs of
+              their occupants — a solitary astronomer and a pair of twins.{" "}
+              <br />
+              <br />
+              The Astronomer's House comfortably fits a single resident across
+              two floors. The ground level contains a kitchenette, living room,
+              office, and full and half bathrooms, while the top floor functions
+              as both a primary bedroom and a personal observatory. The
+              observatory volume rotates around the central stair core, allowing
+              the astronomer to track any part of the night sky. When rotated,
+              it opens onto a rooftop terrace above the first floor.
+              <br />
+              <br /> The Twin House is organized around a single governing idea:
+              perfect bilateral symmetry. The double-height foyer announces this
+              immediately upon entry, dramatizing the two separate but mirrored
+              paths of circulation through the home. The ground floor holds a
+              kitchen, living and dining room, and a private sunken garden at
+              the rear, oriented north to favor plants that thrive in indirect
+              light. Upstairs, the two bedrooms are exactly symmetrical, meeting
+              at a shared bathroom at the end of the hall. Though there was
+              space for two, a single shared bathroom felt more true to the
+              spirit of the house.
             </Text>
           </GridItem>
         </Grid>

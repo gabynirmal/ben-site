@@ -7,7 +7,7 @@ export default function AboutDev() {
     <Popover.Root>
       <Popover.Trigger asChild>
         <Flex
-          zIndex="tooltip"
+          zIndex="max"
           position="fixed"
           bottom="20px"
           right="20px"
@@ -28,7 +28,7 @@ export default function AboutDev() {
           transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
         >
           <img
-            src="/dev/GNSage.png"
+            src="/dev/GNLogoDB.png"
             alt="Gabriela Nirmal Logo"
             width={40}
             height={40}
@@ -38,7 +38,7 @@ export default function AboutDev() {
       </Popover.Trigger>
       <Portal>
         <Popover.Positioner>
-          <Popover.Content zIndex={"tooltip"} bgColor="#afaf9d">
+          <Popover.Content zIndex={"tooltip"} bgColor="var(--link-hover)">
             <Popover.Body color="var(--background)">
               <Popover.Title fontWeight="medium">About The Dev</Popover.Title>
               <Text>

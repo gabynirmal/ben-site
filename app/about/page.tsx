@@ -49,16 +49,17 @@ export default function About() {
           transition="opacity 0.6s ease, transform 0.6s ease"
         >
           <Text as="p" color="var(--background)">
-            Marxism consectetur pour-over, taiyaki etsy eiusmod paleo narwhal
-            non offal tattooed. Mukbang chicharrones af gochujang palo santo
-            poutine tousled gorpcore iPhone taxidermy lyft.
+            Hi, I’m Benjamin Smith, a third-year Architectural Studies and
+            Design major at Northeastern University. I’m particularly interested
+            in sustainable design and creating spaces that consider the needs of
+            all living things. I believe green space plays a vital role in
+            shaping meaningful and livable environments.
             <br />
             <br />
-            Wolf messenger bag four dollar toast pinterest live-edge excepteur
-            VHS stumptown af art party distillery raw denim id artisan. Kombucha
-            selvage freegan laborum kitsch DIY food truck pork belly. Austin
-            deserunt edison bulb whatever, iceland banjo in. Godard af quis,
-            vice ugh shaman 8-bit laboris jianbing.
+            Outside the studio, I enjoy caring for my growing plant collection
+            and experimenting with interior design. I also taught myself how to
+            crochet, which has become a creative outlet alongside my love for
+            discovering new music.
           </Text>
           <ContactLinks mt="6" />
         </Flex>

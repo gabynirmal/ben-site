@@ -84,12 +84,31 @@ export default function ChinatownLibrary() {
               </Flex>
             </Link>
             <Text as="p" textStyle="xl">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              This library was designed to address a critical challenge facing
+              lower-income immigrant urban communities: the lack of green space
+              and tree canopy. Green space is essential to the physical and
+              mental health of urban residents, providing cooling relief in
+              dense neighborhoods during summer heat, and offering third spaces
+              for gathering and socializing.
+              <br />
+              <br />
+              The design extends the adjacent pocket park, One Greenway Park, by
+              dedicating the majority of the lot to open parkland and
+              concentrating the building footprint in the upper left corner of
+              the site, growing vertically rather than outward. Midway up the
+              building, an outdoor green terrace divides the program into two
+              zones: the active ground floors housing a café, lecture hall, and
+              children's section, and the quieter upper floors reserved for the
+              main collection and reading areas.
+              <br />
+              <br />
+              The structure is built almost entirely from Cross-laminated timber
+              and glass, with concrete used only for the two cores anchored on
+              either side of the central opening, housing the elevators and
+              bathrooms. To maximize spatial efficiency, every wall and railing
+              is lined with stacked bookshelves set behind UV-protective glass,
+              unifying the interior storage system with the building's facade of
+              clean, continuous horizontal lines.
             </Text>
           </GridItem>
 

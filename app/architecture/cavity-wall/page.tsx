@@ -33,12 +33,13 @@ export default function CavityWall() {
             </Flex>
 
             <Text as="p" textStyle="xl">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              A technical construction document detailing a two-story brick
+              veneer cavity wall system from foundation footing to green roof
+              parapet, drawn at 3/4" = 1'-0" scale. The section documents the
+              full building envelope assembly, including a waterproofed concrete
+              foundation, two floors with distinct structural systems and
+              interior finishes, and a sedum green roof, with an emphasis on
+              drafting clarity, line weight hierarchy, and precise dimensioning.
             </Text>
           </GridItem>
           <GridItem rowSpan={3} colSpan={2} overflow="auto">
