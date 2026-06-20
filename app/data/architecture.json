@@ -1,6 +1,6 @@
 [
   {
-    "title": "The Stacks: Boston Chinatown Library",
+    "title": "THE STACKS: BOSTON CHINATOWN LIBRARY",
     "image": "bpl-library/Outside1_8SiteEntrance.png",
     "link": "/architecture/chinatown-library",
     "alt": "Library Site Entrance Render",
@@ -32,39 +32,35 @@
         "alt": "Inside Back"
       },
       {
-        "image": "bpl-library/InsideLobby.png",
-        "alt": "Inside Lobby"
-      },
-      {
-        "image": "bpl-library/MassingLeftAxonNoBackground.png",
-        "alt": "Massing Left Axon"
-      },
-      {
-        "image": "bpl-library/MassingRIghtAxonNoBackground.png",
-        "alt": "Massing Right Axon "
-      },
-      {
-        "image": "bpl-library/LibraryASectionPerspective.png",
-        "alt": "Library Section A Perspective",
-        "colSpan": 2
+        "image": "bpl-library/LibraryPlans-01.png",
+        "alt": "Library Plans"
       },
 
       {
-        "image": "bpl-library/LibraryBSectionPerspective.png",
-        "alt": "Library Section B Perspective",
-        "colSpan": 2
-      },
-      {
-        "image": "bpl-library/LibraryPlans-01.png",
-        "alt": "Library Plans"
+        "image": "bpl-library/InsideLobby.png",
+        "alt": "Inside Lobby"
       },
       {
         "image": "bpl-library/LibraryPlans-02.png",
         "alt": "Library Plans"
       },
+
+      {
+        "image": "bpl-library/MassingLeftAxonNoBackground.png",
+        "alt": "Massing Left Axon"
+      },
       {
         "image": "bpl-library/LibraryPlans-03.png",
         "alt": "Library Plans"
+      },
+      {
+        "image": "bpl-library/MassingRIghtAxonNoBackground.png",
+        "alt": "Massing Right Axon "
+      },
+
+      {
+        "image": "bpl-library/LibrarySitePlan.png",
+        "alt": "LibrarySitePlan"
       },
       {
         "image": "bpl-library/LibraryPlans-04.png",
@@ -74,22 +70,41 @@
         "image": "bpl-library/LibraryPlans-05.png",
         "alt": "Library Plans"
       },
+
+      {
+        "image": "bpl-library/LibraryASectionPerspective.png",
+        "alt": "Library Section A Perspective",
+        "colSpan": 2
+      },
+
       {
         "image": "bpl-library/LibraryPlans-06.png",
         "alt": "Library Plans"
       },
+
       {
-        "image": "bpl-library/LibrarySitePlan.png",
-        "alt": "LibrarySitePlan"
+        "image": "bpl-library/LibraryBSectionPerspective.png",
+        "alt": "Library Section B Perspective",
+        "colSpan": 2
+      },
+      {
+        "image": "bpl-library/LibraryElevationDiagramNoBack.png",
+        "alt": "LibraryElevationDiagramNoBack",
+        "colSpan": 3
       }
     ]
   },
   {
-    "title": "The Chinatown Backyard",
+    "title": "THE CHINATOWN BACKYARD",
     "image": "bpl-bathroom/BathroomPerspective.jpeg",
     "link": "/architecture/chinatown-bathroom",
     "alt": "Bathroom Close Up",
     "gallery": [
+      {
+        "image": "bpl-bathroom/NoBackbathroomFront.png",
+        "alt": "NoBackbathroomFront",
+        "colSpan": 3
+      },
       {
         "image": "bpl-bathroom/BathroomTopView.png",
         "alt": "Bathroom Model Top View",
@@ -107,21 +122,46 @@
         "image": "bpl-bathroom/BathroomPerspective2NoBack.png",
         "alt": "Bathroom Model Entrance"
       },
+
       {
-        "image": "bpl-bathroom/NoBackbathroomFront.png",
-        "alt": "NoBackbathroomFront",
-        "colSpan": 2
+        "image": "bpl-bathroom/SitePlanPavillion.png",
+        "alt": "SitePlanPavillion"
+      },
+
+      {
+        "image": "bpl-bathroom/MIddleSectionPavillion.png",
+        "alt": "MIddleSectionPavillion"
+      },
+      {
+        "image": "bpl-bathroom/FloorPlanPavillion.png",
+        "alt": "FloorPlanPavillion"
+      },
+      {
+        "image": "bpl-bathroom/PlotEntryPavillion.png",
+        "alt": "PlotEntryPavillion"
+      },
+      {
+        "image": "bpl-bathroom/DividerViewPavillion.png",
+        "alt": "DividerViewPavillion"
+      },
+      {
+        "image": "bpl-bathroom/HeadOnEntryPerspective.png",
+        "alt": "HeadOnEntryPerspective"
+      },
+      {
+        "image": "bpl-bathroom/SideSectionPavillion.png",
+        "alt": "SideSectionPavillion"
       }
     ]
   },
   {
-    "title": "Masonry Cavity Wall",
+    "title": "MASONRY CAVITY WALL",
     "image": "cavity-wall/FinalCavityWall.png",
     "link": "/architecture/cavity-wall",
     "alt": "Masonry Cavity Wall"
   },
   {
-    "title": "Double House",
+    "title": "DOUBLE HOUSE",
     "image": "double-house/AngleImage.png",
     "link": "/architecture/double-house",
     "alt": "Double House Angled Image",

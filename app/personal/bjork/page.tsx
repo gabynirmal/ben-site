@@ -17,13 +17,15 @@ export default function Bjork() {
         >
           <GridItem colSpan={2} rowSpan={2}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">Bjork Vector Art</Heading>
+              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+                BJORK VECTOR ART
+              </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2023 | Graphic Design
               </Text>
             </Flex>
 
-            <Text as="p" textStyle="xl">
+            <Text as="p" textStyle="md">
               Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
               Post-ironic thundercats supper club, garum whatever bikepacking
               live-edge echo park red light therapy blundstones. Organic kitsch

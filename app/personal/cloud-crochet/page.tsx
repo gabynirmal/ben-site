@@ -26,13 +26,15 @@ export default function CloudCrochet() {
           </GridItem>
           <GridItem colSpan={4}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">Crochet Angel Clouds</Heading>
+              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+                CROCHET ANGEL CLOUDS
+              </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2023 | Crochet
               </Text>
             </Flex>
 
-            <Text as="p" textStyle="xl">
+            <Text as="p" textStyle="md">
               Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
               Post-ironic thundercats supper club, garum whatever bikepacking
               live-edge echo park red light therapy blundstones. Organic kitsch

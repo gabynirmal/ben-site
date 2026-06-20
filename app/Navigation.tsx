@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 
 export default function Navigation(props: FlexProps) {
   const pathname = usePathname();
-  const navigation = ["Architecture", "Design", "Personal", "About"];
+  const navigation = ["ARCHITECTURE", "DESIGN", "PERSONAL", "ABOUT"];
   return (
     <Flex
       id="bs-navigation"
@@ -20,11 +20,15 @@ export default function Navigation(props: FlexProps) {
       left="0"
       w="100%"
       zIndex="docked"
+      bgColor="transparent"
+      backdropFilter="blur(5px)"
       {...props}
     >
       <Link href="/">
         <Heading
           size="3xl"
+          fontWeight="500"
+          letterSpacing="wide"
           color={pathname === "/" ? "var(--emphasis)" : "var(--foreground)"}
           _hover={
             pathname === "/"
@@ -33,14 +37,16 @@ export default function Navigation(props: FlexProps) {
           }
           transition="color 0.2s ease-in-out"
         >
-          Benjamin Smith
+          BENJAMIN SMITH
         </Heading>
       </Link>
-      <Flex gap="8" display={{ base: "none", md: "flex" }}>
+      <Flex gap="8" display={{ base: "none", lg: "flex" }}>
         {navigation.map((link: string) => (
           <Link href={`/${link.toLowerCase()}`} key={link}>
             <Heading
               size="xl"
+              fontWeight="500"
+              letterSpacing="wide"
               color={
                 pathname.includes(link.toLowerCase())
                   ? "var(--emphasis)"
@@ -58,7 +64,7 @@ export default function Navigation(props: FlexProps) {
           </Link>
         ))}
       </Flex>
-      <Box display={{ base: "block", md: "none" }}>
+      <Box display={{ base: "block", lg: "none" }}>
         <MobileNav />
       </Box>
     </Flex>

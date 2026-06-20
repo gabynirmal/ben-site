@@ -26,13 +26,15 @@ export default function CavityWall() {
         >
           <GridItem rowSpan={3}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">Masonry Wall Cavity</Heading>
+              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+                MASONRY CAVITY WALL
+              </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2026
               </Text>
             </Flex>
 
-            <Text as="p" textStyle="xl">
+            <Text as="p" textStyle="md">
               A technical construction document detailing a two-story brick
               veneer cavity wall system from foundation footing to green roof
               parapet, drawn at 3/4" = 1'-0" scale. The section documents the

@@ -17,13 +17,15 @@ export default function PaintedBottles() {
         >
           <GridItem rowSpan={3}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">Painted Bottles</Heading>
+              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+                PAINTED BOTTLES
+              </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2023 | Painting
               </Text>
             </Flex>
 
-            <Text as="p" textStyle="xl">
+            <Text as="p" textStyle="md">
               Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
               Post-ironic thundercats supper club, garum whatever bikepacking
               live-edge echo park red light therapy blundstones. Organic kitsch

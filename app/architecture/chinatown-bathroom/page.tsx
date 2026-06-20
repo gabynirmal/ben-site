@@ -24,34 +24,40 @@ export default function ChinatownBathroom() {
           h="100%"
           w="100%"
         >
-          <GridItem position="relative" colSpan={2}>
+          <GridItem position="relative" colSpan={1} rowSpan={2}>
             {" "}
-            <Flex
-              h="100%"
-              w="100"
-              bgColor="var(--emphasis)"
-              color="var(--background)"
-              justifyContent="center"
-              alignItems="center"
-            >
-              TBD
-            </Flex>
+            <Image
+              src="/architecture/bpl-bathroom/BathroomPerspective.jpeg"
+              fill
+              style={{ objectFit: "cover" }}
+              alt="BathroomPerspective"
+              loading="eager"
+            />
           </GridItem>
-          <GridItem rowSpan={3} position="relative">
-            <Flex
-              h="100%"
-              w="100"
-              bgColor="var(--emphasis)"
-              color="var(--background)"
-              justifyContent="center"
-              alignItems="center"
-            >
-              TBD
-            </Flex>
+          <GridItem position="relative" colSpan={1} rowSpan={2}>
+            {" "}
+            <Image
+              src="/architecture/bpl-bathroom/BathroomPerspective3.jpeg"
+              fill
+              style={{ objectFit: "cover" }}
+              alt="BathroomPerspective3"
+              loading="eager"
+            />
           </GridItem>
-          <GridItem colSpan={2}>
+          <GridItem rowSpan={4} position="relative">
+            <Image
+              src="/architecture/bpl-bathroom/BathroomPerspective2.jpeg"
+              fill
+              style={{ objectFit: "cover" }}
+              alt="BathroomPerspective2"
+              loading="eager"
+            />
+          </GridItem>
+          <GridItem colSpan={2} rowSpan={2}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">The Chinatown Backyard</Heading>
+              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+                THE CHINATOWN BACKYARD
+              </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2026 | Public Bathroom & Community Garden
               </Text>
@@ -78,7 +84,7 @@ export default function ChinatownBathroom() {
                 </Text>
               </Flex>
             </Link>
-            <Text as="p" textStyle="xl">
+            <Text as="p" textStyle="md">
               Chinatown Backyard is a free, publicly funded community garden
               where residents can socialize, learn about local plants and
               ecosystems, and access public restrooms without any obligation to
@@ -101,24 +107,6 @@ export default function ChinatownBathroom() {
 
           <GridItem position="relative" rowSpan={2} colSpan={2} />
         </Grid>
-
-        {/* Bathroom of this section */}
-        <Box
-          position="absolute"
-          bottom={0}
-          left={0}
-          w="100%"
-          h="100%"
-          pointerEvents="none"
-        >
-          <Image
-            src="/architecture/bpl-bathroom/NoBackbathroomFront.png"
-            fill
-            alt="Library Elevation Diagram"
-            style={{ objectFit: "contain", objectPosition: "bottom center" }}
-            loading="eager"
-          />
-        </Box>
       </Box>
 
       <Box>

@@ -16,14 +16,15 @@ export default function Personal() {
         left="0"
         w="100vw"
         h="100vh"
+        overflow="hidden"
       >
         <Image
-          src="/personal/bottles/BottlesPainting.jpeg"
-          alt="Photoshopped Image of Architectural Model"
+          src="/personal/jerry/JerryGarciaTapestry.png"
+          alt="Jerry Garcia Crocheted Tapestry"
           fill
           style={{
             objectFit: "cover",
-            objectPosition: "center 20%",
+            transform: "scale(1.5)",
           }}
           loading="eager"
         />

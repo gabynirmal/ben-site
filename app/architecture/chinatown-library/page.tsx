@@ -24,7 +24,7 @@ export default function ChinatownLibrary() {
           h="100%"
           w="100%"
         >
-          <GridItem position="relative" rowSpan={2}>
+          <GridItem position="relative" rowSpan={1}>
             <Image
               src="/architecture/bpl-library/LibraryTopFloorView.png"
               fill
@@ -34,7 +34,7 @@ export default function ChinatownLibrary() {
             />
           </GridItem>
 
-          <GridItem position="relative" rowSpan={2}>
+          <GridItem position="relative" rowSpan={1}>
             <Image
               src="/architecture/bpl-library/LibrarySiteEntranceRender.png"
               fill
@@ -44,7 +44,7 @@ export default function ChinatownLibrary() {
             />
           </GridItem>
 
-          <GridItem rowSpan={3} position="relative">
+          <GridItem rowSpan={4} position="relative">
             <Image
               src="/architecture/bpl-library/LibrarySitePlan.png"
               fill
@@ -54,9 +54,11 @@ export default function ChinatownLibrary() {
             />
           </GridItem>
 
-          <GridItem colSpan={2}>
+          <GridItem colSpan={2} rowSpan={2}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">The Stacks: Boston Chinatown Library</Heading>
+              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+                THE STACKS: BOSTON CHINATOWN LIBRARY
+              </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2026 | Library
               </Text>
@@ -83,7 +85,7 @@ export default function ChinatownLibrary() {
                 </Text>
               </Flex>
             </Link>
-            <Text as="p" textStyle="xl">
+            <Text as="p" textStyle="md">
               This library was designed to address a critical challenge facing
               lower-income immigrant urban communities: the lack of green space
               and tree canopy. Green space is essential to the physical and
@@ -114,28 +116,9 @@ export default function ChinatownLibrary() {
 
           <GridItem colSpan={2} />
         </Grid>
-
-        {/* Elevation anchored to bottom of this section */}
-        <Box
-          position="absolute"
-          bottom={0}
-          left={0}
-          w="100%"
-          h="100%"
-          pointerEvents="none"
-          zIndex="banner"
-        >
-          <Image
-            src="/architecture/bpl-library/LibraryElevationDiagramNoBack.png"
-            fill
-            alt="Library Elevation Diagram"
-            loading="eager"
-            style={{ objectFit: "contain", objectPosition: "bottom" }}
-          />
-        </Box>
       </Box>
 
-      <Box pb="165px">
+      <Box pb="50px">
         <Masonry db={thisProject?.gallery ?? []} folder="architecture" />
       </Box>
     </>

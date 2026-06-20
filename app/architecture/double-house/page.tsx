@@ -45,7 +45,9 @@ export default function DoubleHouse() {
 
           <GridItem colSpan={2}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl">The Compound</Heading>
+              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+                THE COMPOUND
+              </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2025 | Double House
               </Text>
@@ -54,7 +56,7 @@ export default function DoubleHouse() {
               href="https://maps.app.goo.gl/P7J1p7ck8cX9CxF37?g_st=i&utm_campaign=ac-im"
               target="_blank"
             ></Link>
-            <Text as="p" textStyle="xl">
+            <Text as="p" textStyle="md">
               This compound explores the concept of multi-family living by
               designing two distinct homes around the personalities and needs of
               their occupants — a solitary astronomer and a pair of twins.{" "}

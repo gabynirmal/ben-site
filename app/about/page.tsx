@@ -1,6 +1,14 @@
 "use client";
 
-import { Flex, Text, Grid, Icon, Popover, Portal } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Grid,
+  Icon,
+  Popover,
+  Portal,
+  GridItem,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import ContactLinks from "./ContactLinks";
 import { useState, useEffect } from "react";
@@ -39,7 +47,12 @@ export default function About() {
         h="100vh"
         p="10"
       >
-        {/* First column - text */}
+        {/* Mobile Spacer Third Column - text */}
+        <GridItem
+          display={{ base: "block", lg: "none" }}
+          colSpan={2}
+        ></GridItem>
+        {/* First column Desktop - text */}
         <Flex
           flexDirection="column"
           pb="20px"
@@ -48,7 +61,11 @@ export default function About() {
           transform={isVisible ? "translateY(0)" : "translateY(20px)"}
           transition="opacity 0.6s ease, transform 0.6s ease"
         >
-          <Text as="p" color="var(--background)">
+          <Text
+            as="p"
+            color="var(--background)"
+            textAlign={{ base: "right", lg: "left" }}
+          >
             Hi, I’m Benjamin Smith, a third-year Architectural Studies and
             Design major at Northeastern University. I’m particularly interested
             in sustainable design and creating spaces that consider the needs of

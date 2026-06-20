@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 export default function MobileNav() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigation = ["Architecture", "Design", "Personal", "About"];
+  const navigation = ["ARCHITECTURE", "DESIGN", "PERSONAL", "ABOUT"];
   return (
     <>
       <Portal>
@@ -30,10 +30,12 @@ export default function MobileNav() {
           pointerEvents={isMenuOpen ? "auto" : "none"}
           transition="opacity 0.3s ease-in-out"
         >
-          <Box position="absolute" top="17px" left="4">
+          <Box position="absolute" top="17px" left="30px">
             <Link href="/">
               <Heading
                 size="3xl"
+                fontWeight="500"
+                letterSpacing="wide"
                 color={
                   pathname === "/" ? "var(--emphasis)" : "var(--background)"
                 }
@@ -44,7 +46,7 @@ export default function MobileNav() {
                 }
                 transition="color 0.2s ease-in-out"
               >
-                Benjamin Smith
+                BENJAMIN SMITH
               </Heading>
             </Link>
           </Box>
@@ -80,7 +82,9 @@ export default function MobileNav() {
               onClick={() => setIsMenuOpen(false)}
             >
               <Heading
-                size="5xl"
+                size="4xl"
+                fontWeight="500"
+                letterSpacing="wide"
                 color={
                   pathname.includes(link.toLowerCase())
                     ? "var(--emphasis)"

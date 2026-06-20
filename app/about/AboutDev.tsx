@@ -7,6 +7,7 @@ export default function AboutDev() {
     <Popover.Root>
       <Popover.Trigger asChild>
         <Flex
+          cursor="pointer"
           zIndex="max"
           position="fixed"
           bottom="20px"
@@ -22,7 +23,7 @@ export default function AboutDev() {
               transition: "filter 0.2s ease-in-out",
             },
             "&:hover img": {
-              filter: "brightness(0.9)",
+              filter: "brightness(0.8)",
             },
           }}
           transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
@@ -40,9 +41,11 @@ export default function AboutDev() {
         <Popover.Positioner>
           <Popover.Content zIndex={"tooltip"} bgColor="var(--link-hover)">
             <Popover.Body color="var(--background)">
-              <Popover.Title fontWeight="medium">About The Dev</Popover.Title>
+              <Popover.Title fontWeight="medium" letterSpacing="wide">
+                ABOUT THE DEV
+              </Popover.Title>
               <Text>
-                Gabriela Nirmal created this website with React, Typescript, &
+                Gabriela Nirmal created this website using React, Typescript, &
                 Chakra UI
               </Text>
             </Popover.Body>

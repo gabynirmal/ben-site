@@ -14,7 +14,7 @@ export default function Masonry({ db, folder }: { db: any[]; folder: string }) {
     >
       {db.map((project) => (
         <MasonryItem
-          key={project.link}
+          key={project.image}
           colSpan={project.colSpan}
           link={project.link}
         >
@@ -48,7 +48,14 @@ export default function Masonry({ db, folder }: { db: any[]; folder: string }) {
               justifyContent="center"
               zIndex={1}
             >
-              <Heading size="2xl" color="white" textAlign="center" p="20px">
+              <Heading
+                size="2xl"
+                fontWeight={500}
+                letterSpacing="wide"
+                color="white"
+                textAlign="center"
+                p="20px"
+              >
                 {project.title}
               </Heading>
             </Box>
