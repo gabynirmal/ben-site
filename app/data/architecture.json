@@ -167,14 +167,6 @@
     "alt": "Double House Angled Image",
     "gallery": [
       {
-        "image": "double-house/FinalRefinedDHDrawings-01.png",
-        "alt": "FinalRefinedDHDrawings-01"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-02.png",
-        "alt": "FinalRefinedDHDrawings-02"
-      },
-      {
         "image": "double-house/FinalRefinedDHDrawings-03.png",
         "alt": "FinalRefinedDHDrawings-03"
       },
@@ -186,6 +178,15 @@
         "image": "double-house/FinalRefinedDHDrawings-05.png",
         "alt": "FinalRefinedDHDrawings-05"
       },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-01.png",
+        "alt": "FinalRefinedDHDrawings-01"
+      },
+      {
+        "image": "double-house/FinalRefinedDHDrawings-02.png",
+        "alt": "FinalRefinedDHDrawings-02"
+      },
+
       {
         "image": "double-house/FinalRefinedDHDrawings-06.png",
         "alt": "FinalRefinedDHDrawings-06"

@@ -26,12 +26,11 @@ export default function Jerry() {
             </Flex>
 
             <Text as="p" textStyle="md">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              My most ambitious crochet project to date, a pixel art tapestry of
+              Jerry Garcia, lead guitarist of the Grateful Dead, spanning nearly
+              four feet wide and totaling over 90 hours of work across two
+              years. After completing the piece, I tie-dyed the white background
+              in true Grateful Dead fashion.
             </Text>
           </GridItem>
           <GridItem position="relative" colSpan={3} rowSpan={2} overflow="auto">

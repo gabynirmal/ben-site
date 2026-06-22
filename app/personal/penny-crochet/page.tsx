@@ -34,12 +34,10 @@ export default function PennyCrochet() {
             </Flex>
 
             <Text as="p" textStyle="md">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              A custom crocheted snood designed and made for my dog Penny. The
+              project required drafting an original pattern fitted to her head,
+              then separately constructing and attaching the bouquet of flowers
+              and vines, about 30 hours of work in total. She wore it awkwardly.
             </Text>
           </GridItem>
           <GridItem rowSpan={3} position="relative">

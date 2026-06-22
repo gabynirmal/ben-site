@@ -74,7 +74,7 @@ export default function About() {
             <br />
             <br />
             Outside the studio, I enjoy caring for my growing plant collection
-            and experimenting with interior design. I also taught myself how to
+            and exploring the natural environment. I also taught myself how to
             crochet, which has become a creative outlet alongside my love for
             discovering new music.
           </Text>

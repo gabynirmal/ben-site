@@ -27,7 +27,7 @@ export default function CloudCrochet() {
           <GridItem colSpan={4}>
             <Flex justifyContent="space-between" pb="15px">
               <Heading size="2xl" letterSpacing="wide" fontWeight="500">
-                CROCHET ANGEL CLOUDS
+                EYES OF THE WORLD
               </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">
                 2023 | Crochet
@@ -35,12 +35,11 @@ export default function CloudCrochet() {
             </Flex>
 
             <Text as="p" textStyle="md">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              A crocheted interpretation of the Grateful Dead song of the same
+              name, constructed as a surrealist and psychedelic piece. The
+              project required developing an original pattern for perfectly
+              round forms and multi-colored eyes, totaling over 20 hours of
+              work.
             </Text>
           </GridItem>
         </Grid>

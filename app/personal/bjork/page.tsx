@@ -26,12 +26,9 @@ export default function Bjork() {
             </Flex>
 
             <Text as="p" textStyle="md">
-              Tahini shakshuka tarot pull, tumeric hella sambas orange wine.
-              Post-ironic thundercats supper club, garum whatever bikepacking
-              live-edge echo park red light therapy blundstones. Organic kitsch
-              thrifted air plant duck fat. Leggings health goth crochet van
-              life. Indigo dye feeld vaporware biodynamic birkenstocks unicorn.
-              Gatekeep blackbird spyplane marxism listening bar.
+              A practice exercise in Adobe Illustrator recreating Björk's iconic
+              Post album cover using only the pen tool, as a study in vector
+              illustration and precision drafting.
             </Text>
           </GridItem>
           <GridItem position="relative" colSpan={3} rowSpan={2} overflow="auto">

@@ -1,7 +1,7 @@
 import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import Image from "next/image";
 
-export default function Sketchbook() {
+export default function EssenceOfBoston() {
   return (
     <>
       <Flex
@@ -13,8 +13,7 @@ export default function Sketchbook() {
       >
         <Flex justifyContent="space-between" pb="15px" py="20px" gap="100px">
           <Heading size="2xl" letterSpacing="wide" fontWeight="500">
-            SKETCHBOOK OF LANDSCAPE STUDIES AND SEMI-RELEVANT THOUGHTS AND
-            ANECDOTES
+            ESSENCE OF BOSTON
           </Heading>
           <Text as="p" textStyle="2xl" fontStyle="italic">
             2025
@@ -22,17 +21,17 @@ export default function Sketchbook() {
         </Flex>
 
         <Text as="p" textStyle="md">
-          A personal travel sketchbook documenting significant places through
-          hand-drawn landscape studies paired with short written reflections.
-          Typography is used experimentally throughout, with page numbers and
-          location headings treated as compositional elements that accent rather
-          than compete with the drawings.
+          A pamphlet documenting the distinct smells of Boston through a
+          cohesive, repeating design system. Every visual decision appears at
+          least twice across the pages, creating consistency throughout, while
+          experimental typography is woven into the layout as a recurring design
+          element.
         </Text>
         <iframe
           allowFullScreen={true}
           allow="clipboard-write"
           className="fp-iframe"
-          src="https://heyzine.com/flip-book/0d1c23cf02.html"
+          src="https://heyzine.com/flip-book/c3ecf00031.html"
           style={{ width: "100%", height: "100%" }}
         ></iframe>
       </Flex>
