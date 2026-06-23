@@ -1,9 +1,6 @@
-import Masonry from "@/components/ui/masonry/Masonry";
 import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import * as db from "../../data";
-import { FaMapPin } from "react-icons/fa";
-import Link from "next/link";
 
 export default function CavityWall() {
   const architecture = db.architecture;

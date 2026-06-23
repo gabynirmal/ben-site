@@ -1,6 +1,17 @@
 [
   {
     "title": "THE STACKS: BOSTON CHINATOWN LIBRARY",
+    "year": "2026",
+    "concept": "Library",
+    "description": {
+      "p1": "This library was designed to address a critical challenge facing lower-income immigrant urban communities: the lack of green space and tree canopy. Green space is essential to the physical and mental health of urban residents, providing cooling relief in dense neighborhoods during summer heat, and offering third spaces for gathering and socializing.",
+      "p2": "The design extends the adjacent pocket park, One Greenway Park, by dedicating the majority of the lot to open parkland and concentrating the building footprint in the upper left corner of the site, growing vertically rather than outward. Midway up the building, an outdoor green terrace divides the program into two zones: the active ground floors housing a café, lecture hall, and children's section, and the quieter upper floors reserved for the main collection and reading areas.",
+      "p3": "The structure is built almost entirely from Cross-laminated timber and glass, with concrete used only for the two cores anchored on either side of the central opening, housing the elevators and bathrooms. To maximize spatial efficiency, every wall and railing is lined with stacked bookshelves set behind UV-protective glass, unifying the interior storage system with the building's facade of clean, continuous horizontal lines."
+    },
+    "location": {
+      "title": "Chinatown, Boston, MA",
+      "link": "https://maps.app.goo.gl/gPTHGG1vK18dAT6E8?g_st=i&utm_campaign=ac-im"
+    },
     "image": "bpl-library/Outside1_8SiteEntrance.png",
     "link": "/architecture/chinatown-library",
     "alt": "Library Site Entrance Render",
@@ -96,6 +107,17 @@
   },
   {
     "title": "THE CHINATOWN BACKYARD",
+    "year": "2026",
+    "concept": "Bathroom",
+    "description": {
+      "p1": " Chinatown Backyard is a free, publicly funded community garden where residents can socialize, learn about local plants and ecosystems, and access public restrooms without any obligation to spend money.",
+      "p2": "The two restroom structures are wrapped in stacked, curving panels that act as privacy screens angled so that occupants can see out, but passersby cannot see in. The front face of each structure is clad in glass brick, and a glass-and-steel dome crowns the roof, keeping users connected to the sky overhead.",
+      "p3": "S-shaped dividers wrap around the two structures, continuing the language of the curving screen while guiding the flow of visitors across the site, linking the two structures and mediating movement from one side of the garden to the other."
+    },
+    "location": {
+      "title": "Chinatown, Boston, MA",
+      "link": "https://maps.app.goo.gl/P7J1p7ck8cX9CxF37?g_st=i&utm_campaign=ac-im"
+    },
     "image": "bpl-bathroom/BathroomPerspective.jpeg",
     "link": "/architecture/chinatown-bathroom",
     "alt": "Bathroom Close Up",
@@ -156,12 +178,24 @@
   },
   {
     "title": "MASONRY CAVITY WALL",
+    "year": "2026",
+    "concept": "",
+    "description": {
+      "p1": "A technical construction document detailing a two-story brick veneer cavity wall system from foundation footing to green roof parapet, drawn at 3/4\" = 1'-0\" scale. The section documents the full building envelope assembly, including a waterproofed concrete foundation, two floors with distinct structural systems and interior finishes, and a sedum green roof, with an emphasis on drafting clarity, line weight hierarchy, and precise dimensioning."
+    },
     "image": "cavity-wall/FinalCavityWall.png",
     "link": "/architecture/cavity-wall",
     "alt": "Masonry Cavity Wall"
   },
   {
-    "title": "DOUBLE HOUSE",
+    "title": "TWIN HOUSE",
+    "year": "2025",
+    "concept": "Double House",
+    "description": {
+      "p1": "This compound explores the concept of multi-family living by designing two distinct homes around the personalities and needs of their occupants — a solitary astronomer and a pair of twins.",
+      "p2": "The Astronomer's House comfortably fits a single resident across two floors. The ground level contains a kitchenette, living room, office, and full and half bathrooms, while the top floor functions as both a primary bedroom and a personal observatory. The observatory volume rotates around the central stair core, allowing the astronomer to track any part of the night sky. When rotated, it opens onto a rooftop terrace above the first floor.",
+      "p3": "The Twin House is organized around a single governing idea: perfect bilateral symmetry. The double-height foyer announces this immediately upon entry, dramatizing the two separate but mirrored paths of circulation through the home. The ground floor holds a kitchen, living and dining room, and a private sunken garden at the rear, oriented north to favor plants that thrive in indirect light. Upstairs, the two bedrooms are exactly symmetrical, meeting at a shared bathroom at the end of the hall. Though there was space for two, a single shared bathroom felt more true to the spirit of the house."
+    },
     "image": "double-house/AngleImage.png",
     "link": "/architecture/double-house",
     "alt": "Double House Angled Image",

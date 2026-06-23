@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import * as db from "../data";
-import Masonry from "@/components/ui/masonry/Masonry";
+import Masonry from "../../components/ui/masonry/Masonry";
 
 export default function Personal() {
   const personal = db.personal;
