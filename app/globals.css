@@ -4,6 +4,7 @@
   --link-hover: #5a6673;
   --link-hover-opp: #b8ab9e;
   --emphasis: #62548e;
+  --emphasis-opp: #808e54;
   --chakra-fonts-heading: "franklin-gothic-atf", sans-serif;
   --chakra-fonts-body: "franklin-gothic-atf", sans-serif;
 }
@@ -26,4 +27,8 @@ body {
 
 p {
   font-family: Garamond;
+}
+
+html {
+  scroll-behavior: smooth;
 }

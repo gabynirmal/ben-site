@@ -7,24 +7,26 @@ export default function CloudCrochet() {
       <Box position="relative" h="100vh">
         <Grid
           id="bs-personal-cloud-crochet"
-          templateColumns="repeat(4, 1fr)"
           templateRows="repeat(4, 1fr)"
           paddingBottom="20px"
           px={{ base: "10", md: "30px" }}
           gap="30px"
           h="100%"
           w="100%"
+          pt="68px"
         >
-          <GridItem position="relative" colSpan={4} rowSpan={3}>
-            <Image
-              src="/personal/cloud-crochet/cloudnoback.png"
-              fill
-              style={{ objectFit: "cover" }}
-              alt="clouds"
-              loading="eager"
-            />
+          <GridItem rowSpan={3}>
+            <Box position="relative" h="100%" w="100%">
+              <Image
+                src="/personal/cloud-crochet/cloudnoback.png"
+                alt="clouds"
+                fill
+                style={{ objectFit: "contain" }}
+                loading="eager"
+              />
+            </Box>
           </GridItem>
-          <GridItem colSpan={4}>
+          <GridItem rowSpan={1}>
             <Flex justifyContent="space-between" pb="15px">
               <Heading size="2xl" letterSpacing="wide" fontWeight="500">
                 EYES OF THE WORLD

@@ -27,8 +27,9 @@ export default function ChinatownLibrary() {
           <GridItem position="relative" rowSpan={1}>
             <Image
               src="/architecture/bpl-library/LibraryTopFloorView.png"
-              fill
-              style={{ objectFit: "cover" }}
+              width={900}
+              height={900}
+              style={{ width: "100%", height: "auto" }}
               alt="Library Top Floor View"
               loading="eager"
             />
@@ -37,8 +38,9 @@ export default function ChinatownLibrary() {
           <GridItem position="relative" rowSpan={1}>
             <Image
               src="/architecture/bpl-library/LibrarySiteEntranceRender.png"
-              fill
-              style={{ objectFit: "cover" }}
+              width={900}
+              height={900}
+              style={{ width: "100%", height: "auto" }}
               alt="Library Site Entrance Render"
               loading="eager"
             />
