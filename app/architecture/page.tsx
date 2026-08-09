@@ -13,8 +13,8 @@ export default function Architecture() {
       <Flex
         id="bs-home"
         position="absolute"
-        w="100vw"
         h="100vh"
+        w="100%"
         alignItems={"center"}
       >
         <Image

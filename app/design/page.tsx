@@ -18,7 +18,7 @@ export default function Design() {
         position="absolute"
         top="0"
         left="0"
-        w="100vw"
+        w="100%"
         h="100vh"
       >
         <Image
