@@ -14,6 +14,7 @@ export default function Navigation(props: FlexProps) {
   const lastScrollY = useRef(0);
 
   useEffect(() => {
+    if (pathname === "/") return;
     lastScrollY.current = window.scrollY;
 
     const handleScroll = () => {
@@ -32,7 +33,9 @@ export default function Navigation(props: FlexProps) {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
+
+  if (pathname === "/") return null;
 
   return (
     <Flex
