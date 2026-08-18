@@ -35,8 +35,6 @@ export default function Navigation(props: FlexProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
-  if (pathname === "/") return null;
-
   return (
     <Flex
       id="bs-navigation"

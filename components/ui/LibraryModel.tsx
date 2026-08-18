@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
+import * as THREE from "three";
 
-// Type your props cleanly using standard React element properties
 export function LibraryModel(props: React.ComponentPropsWithoutRef<"group">) {
-  // 1. Fetch the raw 3D scene from your public root directory
-  const { scene } = useGLTF("/LibraryRenderedProto.final.glb");
+  const { scene } = useGLTF("/LibraryRenderedProto.final.glb"); // your existing path
 
-  // 2. Render the scene graph inside a primitive wrapper passing down your props
+  useEffect(() => {
+    scene.traverse((child) => {
+      if (child instanceof THREE.Mesh) {
+        const materials = Array.isArray(child.material)
+          ? child.material
+          : [child.material];
+        materials.forEach((mat) => {
+          if (mat.name === "Plastic") {
+            mat.transparent = true;
+            mat.opacity = 0.8;
+          }
+        });
+      }
+    });
+  }, [scene]);
+
   return <primitive object={scene} {...props} />;
 }
 

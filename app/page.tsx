@@ -24,29 +24,6 @@ export default function Home() {
         h="100vh"
         direction="column"
       >
-        <Flex
-          position="absolute"
-          top="0"
-          left="0"
-          w="100%"
-          px={{ base: "4", md: "30px" }}
-          py="15px"
-          zIndex={20}
-          justifyContent="space-between"
-          alignItems="flex-end"
-          pointerEvents="none"
-        >
-          <Heading
-            size="3xl"
-            fontWeight="500"
-            letterSpacing="wide"
-            color="var(--foreground)"
-            pointerEvents="auto"
-          >
-            BENJAMIN SMITH
-          </Heading>
-        </Flex>
-
         <Box position="absolute" inset="0" zIndex={0} id="bs-canvas-trigger">
           <Viewport3D />
         </Box>
@@ -118,7 +95,7 @@ export default function Home() {
             color="var(--link-hover)"
             letterSpacing="wide"
           >
-            Click canvas to explore · WASD to move · Shift/Space for up/down ·
+            Click canvas to explore · WASD to move · Space/Shift for up/down ·
             Esc to exit
           </Text>
         </Box>
@@ -129,68 +106,8 @@ export default function Home() {
           w="100%"
           justifyContent="center"
           zIndex={20}
-        >
-          <a href="#home-featured">
-            <IconButton
-              bg="transparent"
-              color="var(--foreground)"
-              _hover={{ color: "var(--link-hover)" }}
-              aria-label="Scroll to featured projects"
-            >
-              <Icon boxSize="2rem">
-                <FaChevronDown />
-              </Icon>
-            </IconButton>
-          </a>
-        </Flex>
+        ></Flex>
       </Flex>
-
-      <Flex h="100vh" />
-
-      {/* Featured work + category links */}
-      <Box id="home-featured" bg="var(--background)" h="100vh">
-        <Flex
-          direction="column"
-          align="center"
-          pt={{ base: "40px", md: "60px" }}
-          pb="20px"
-          px={{ base: "4", md: "30px" }}
-          gap={8}
-        >
-          <Heading
-            size="2xl"
-            fontWeight="500"
-            letterSpacing="wide"
-            textAlign="center"
-          >
-            SELECTED WORK
-          </Heading>
-          <Flex
-            gap={{ base: 4, md: 8 }}
-            flexWrap="wrap"
-            justifyContent="center"
-          >
-            {categoryLinks.map(({ label, href }) => (
-              <Link href={href} key={href}>
-                <Heading
-                  size={{ base: "md", md: "xl" }}
-                  fontWeight="500"
-                  letterSpacing="wide"
-                  color="var(--foreground)"
-                  _hover={{ color: "var(--emphasis)" }}
-                  transition="color 0.2s ease-in-out"
-                >
-                  {label}
-                </Heading>
-              </Link>
-            ))}
-          </Flex>
-        </Flex>
-
-        <Flex justifyContent="center" pb="80px" pt="20px">
-          <ContactLinks />
-        </Flex>
-      </Box>
     </>
   );
 }
