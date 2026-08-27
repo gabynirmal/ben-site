@@ -3,13 +3,13 @@ export type FeaturedProject = {
   image: string;
   link: string;
   alt: string;
-  folder: "architecture" | "design" | "personal";
+  folder: "architecture" | "design" | "art";
   colSpan?: number;
 };
 
 export const categoryLinks = [
   { label: "ARCHITECTURE", href: "/architecture" },
   { label: "DESIGN", href: "/design" },
-  { label: "PERSONAL", href: "/personal" },
+  { label: "ART", href: "/art" },
   { label: "ABOUT", href: "/about" },
 ] as const;

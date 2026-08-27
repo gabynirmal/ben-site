@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 export default function MobileNav() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigation = ["ARCHITECTURE", "DESIGN", "PERSONAL", "ABOUT"];
+  const navigation = ["ARCHITECTURE", "DESIGN", "ART", "ABOUT"];
   return (
     <>
       <Portal>

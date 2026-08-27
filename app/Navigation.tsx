@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Navigation(props: FlexProps) {
   const pathname = usePathname();
-  const navigation = ["ARCHITECTURE", "DESIGN", "PERSONAL", "ABOUT"];
+  const navigation = ["ARCHITECTURE", "DESIGN", "ART", "ABOUT"];
 
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);

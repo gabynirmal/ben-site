@@ -6,7 +6,7 @@ export default function CloudCrochet() {
     <>
       <Box position="relative" h="100vh">
         <Grid
-          id="bs-personal-cloud-crochet"
+          id="bs-art-cloud-crochet"
           templateRows="repeat(4, 1fr)"
           paddingBottom="20px"
           px={{ base: "10", md: "30px" }}
@@ -18,7 +18,7 @@ export default function CloudCrochet() {
           <GridItem rowSpan={3}>
             <Box position="relative" h="100%" w="100%">
               <Image
-                src="/personal/cloud-crochet/cloudnoback.png"
+                src="/art/cloud-crochet/cloudnoback.png"
                 alt="clouds"
                 fill
                 style={{ objectFit: "contain" }}

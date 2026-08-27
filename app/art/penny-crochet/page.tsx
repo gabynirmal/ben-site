@@ -5,10 +5,8 @@ import * as db from "../../data";
 import Link from "next/link";
 
 export default function PennyCrochet() {
-  const personal = db.personal;
-  const thisProject = personal.find(
-    (p) => p.link === "/personal/penny-crochet",
-  );
+  const art = db.art;
+  const thisProject = art.find((p) => p.link === "/art/penny-crochet");
 
   return (
     <>
@@ -42,7 +40,7 @@ export default function PennyCrochet() {
           </GridItem>
           <GridItem rowSpan={3} position="relative">
             <Image
-              src="/personal/penny-crochet/Pennyfront.png"
+              src="/art/penny-crochet/Pennyfront.png"
               fill
               style={{ objectFit: "cover" }}
               alt="Pennyfront"
@@ -51,7 +49,7 @@ export default function PennyCrochet() {
           </GridItem>{" "}
           <GridItem rowSpan={3} position="relative">
             <Image
-              src="/personal/penny-crochet/pennyleft1.png"
+              src="/art/penny-crochet/pennyleft1.png"
               fill
               style={{ objectFit: "cover" }}
               alt="pennyleft1"
@@ -62,7 +60,7 @@ export default function PennyCrochet() {
       </Box>
 
       <Box>
-        <Masonry db={thisProject?.gallery ?? []} folder="personal" />
+        <Masonry db={thisProject?.gallery ?? []} folder="art" />
       </Box>
     </>
   );

@@ -5,7 +5,7 @@ import Masonry from "@/components/ui/masonry/Masonry";
 import { FaChevronDown } from "react-icons/fa6";
 
 export default function Personal() {
-  const personal = db.personal;
+  const art = db.art;
 
   return (
     <>
@@ -20,7 +20,7 @@ export default function Personal() {
         overflow="hidden"
       >
         <Image
-          src="/personal/jerry/JerryGarciaTapestry.png"
+          src="/art/jerry/JerryGarciaTapestry.png"
           alt="Jerry Garcia Crocheted Tapestry"
           fill
           style={{
@@ -57,7 +57,7 @@ export default function Personal() {
       <Flex h="100vh" />
 
       <Flex id="bs-masonry">
-        <Masonry db={personal} folder="personal" />
+        <Masonry db={art} folder="art" />
       </Flex>
     </>
   );
