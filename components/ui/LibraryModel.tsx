@@ -14,7 +14,7 @@ export function LibraryModel(props: React.ComponentPropsWithoutRef<"group">) {
         materials.forEach((mat) => {
           if (mat.name === "Plastic") {
             mat.transparent = true;
-            mat.opacity = 0.8;
+            mat.opacity = 0.5;
           }
         });
       }

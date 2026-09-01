@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
+import { Flex, Heading, Text, Box } from "@chakra-ui/react";
 import Image from "next/image";
 
 export default function LearningTheHardWay() {

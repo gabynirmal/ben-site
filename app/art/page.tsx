@@ -20,12 +20,11 @@ export default function Personal() {
         overflow="hidden"
       >
         <Image
-          src="/art/jerry/JerryGarciaTapestry.png"
+          src="/art/euro-travels/HenneBeach1.png"
           alt="Jerry Garcia Crocheted Tapestry"
           fill
           style={{
             objectFit: "cover",
-            transform: "scale(1.5)",
           }}
           loading="eager"
         />
