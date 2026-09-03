@@ -1,12 +1,10 @@
-import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 
 export default function EssenceOfBoston() {
   return (
     <Grid
       templateColumns="repeat(5, 1fr)"
       templateRows="repeat(3, 1fr)"
-      direction="column"
-      position="relative"
       paddingTop="62px"
       h="100vh"
       px={{ base: "10", md: "30px" }}
@@ -29,7 +27,7 @@ export default function EssenceOfBoston() {
           element.
         </Text>
       </GridItem>
-      <GridItem colSpan={4} rowSpan={3}>
+      <GridItem colSpan={4} rowSpan={3} mt="-2">
         <iframe
           allowFullScreen={true}
           allow="clipboard-write"

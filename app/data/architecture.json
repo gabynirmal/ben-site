@@ -5,154 +5,130 @@
     "link": "/architecture/chinatown-library",
     "alt": "Library Site Entrance Render",
     "colSpan": 2,
-    "gallery": [
-      {
-        "image": "bpl-library/Outside1_8SiteEntrance.png",
-        "alt": "1/8 Scale Site Entrance"
-      },
-      {
-        "image": "bpl-library/1_8Front.png",
-        "alt": "Front"
-      },
-      {
-        "image": "bpl-library/1_8RightAxon.png",
-        "alt": "Right Axon"
-      },
-      { "image": "bpl-library/1_8LeftSide.png", "alt": "Left Side" },
-      {
-        "image": "bpl-library/1_8Top.png",
-        "alt": "Top"
-      },
-      {
-        "image": "bpl-library/1_8InsideScaleFigure.png",
-        "alt": "Inside Figure"
-      },
-      {
-        "image": "bpl-library/InsideBack.png",
-        "alt": "Inside Back"
-      },
-      {
-        "image": "bpl-library/LibraryPlans-01.png",
-        "alt": "Library Plans"
-      },
-
-      {
-        "image": "bpl-library/InsideLobby.png",
-        "alt": "Inside Lobby"
-      },
-      {
-        "image": "bpl-library/LibraryPlans-02.png",
-        "alt": "Library Plans"
-      },
-
-      {
-        "image": "bpl-library/MassingLeftAxonNoBackground.png",
-        "alt": "Massing Left Axon"
-      },
-      {
-        "image": "bpl-library/LibraryPlans-03.png",
-        "alt": "Library Plans"
-      },
-      {
-        "image": "bpl-library/MassingRIghtAxonNoBackground.png",
-        "alt": "Massing Right Axon "
-      },
-
-      {
-        "image": "bpl-library/LibrarySitePlan.png",
-        "alt": "LibrarySitePlan"
-      },
-      {
-        "image": "bpl-library/LibraryPlans-04.png",
-        "alt": "Library Plans"
-      },
-      {
-        "image": "bpl-library/LibraryPlans-05.png",
-        "alt": "Library Plans"
-      },
-
-      {
-        "image": "bpl-library/LibraryASectionPerspective.png",
-        "alt": "Library Section A Perspective",
-        "colSpan": 2
-      },
-
-      {
-        "image": "bpl-library/LibraryPlans-06.png",
-        "alt": "Library Plans"
-      },
-
-      {
-        "image": "bpl-library/LibraryBSectionPerspective.png",
-        "alt": "Library Section B Perspective",
-        "colSpan": 2
-      },
-      {
-        "image": "bpl-library/LibraryElevationDiagramNoBack.png",
-        "alt": "LibraryElevationDiagramNoBack",
-        "colSpan": 3
-      }
-    ]
+    "gallery": {
+      "siteModel": [
+        {
+          "image": "bpl-library/Outside1_8SiteEntrance.png",
+          "alt": "1/8 Scale Site Entrance"
+        },
+        { "image": "bpl-library/1_8RightAxon.png", "alt": "Right Axon" },
+        { "image": "bpl-library/1_8LeftSide.png", "alt": "Left Side" },
+        { "image": "bpl-library/1_8Front.png", "alt": "Front" },
+        { "image": "bpl-library/1_8Top.png", "alt": "Top" }
+      ],
+      "interior": [
+        {
+          "image": "bpl-library/1_8InsideScaleFigure.png",
+          "alt": "Inside Figure"
+        },
+        { "image": "bpl-library/InsideLobby.png", "alt": "Inside Lobby" },
+        { "image": "bpl-library/InsideBack.png", "alt": "Inside Back" }
+      ],
+      "plans": [
+        { "image": "bpl-library/LibraryPlans-01.png", "alt": "Library Plans" },
+        { "image": "bpl-library/LibraryPlans-02.png", "alt": "Library Plans" },
+        { "image": "bpl-library/LibraryPlans-03.png", "alt": "Library Plans" },
+        { "image": "bpl-library/LibraryPlans-04.png", "alt": "Library Plans" },
+        { "image": "bpl-library/LibraryPlans-05.png", "alt": "Library Plans" },
+        { "image": "bpl-library/LibraryPlans-06.png", "alt": "Library Plans" }
+      ],
+      "massing": [
+        {
+          "image": "bpl-library/MassingLeftAxonNoBackground.png",
+          "alt": "Massing Left Axon"
+        },
+        {
+          "image": "bpl-library/MassingRIghtAxonNoBackground.png",
+          "alt": "Massing Right Axon"
+        }
+      ],
+      "site": [
+        { "image": "bpl-library/LibrarySitePlan.png", "alt": "LibrarySitePlan" }
+      ],
+      "sections": [
+        {
+          "image": "bpl-library/LibraryASectionPerspective.png",
+          "alt": "Library Section A Perspective",
+          "colSpan": 2
+        },
+        {
+          "image": "bpl-library/LibraryBSectionPerspective.png",
+          "alt": "Library Section B Perspective",
+          "colSpan": 2
+        }
+      ],
+      "elevation": [
+        {
+          "image": "bpl-library/LibraryElevationDiagramNoBack.png",
+          "alt": "LibraryElevationDiagramNoBack",
+          "colSpan": 3
+        }
+      ]
+    }
   },
   {
     "title": "THE CHINATOWN BACKYARD",
     "image": "bpl-bathroom/BathroomPerspective.jpeg",
     "link": "/architecture/chinatown-bathroom",
     "alt": "Bathroom Close Up",
-    "gallery": [
-      {
-        "image": "bpl-bathroom/NoBackbathroomFront.png",
-        "alt": "NoBackbathroomFront",
-        "colSpan": 3
-      },
-      {
-        "image": "bpl-bathroom/BathroomTopView.png",
-        "alt": "Bathroom Model Top View",
-        "colSpan": 2
-      },
-      {
-        "image": "bpl-bathroom/BathroomPerspective3.jpeg",
-        "alt": "Bathroom Model Garden Perspective"
-      },
-      {
-        "image": "bpl-bathroom/BathroomPerspective.jpeg",
-        "alt": "Bathroom Model Front View"
-      },
-      {
-        "image": "bpl-bathroom/BathroomPerspective2NoBack.png",
-        "alt": "Bathroom Model Entrance"
-      },
-
-      {
-        "image": "bpl-bathroom/SitePlanPavillion.png",
-        "alt": "SitePlanPavillion"
-      },
-
-      {
-        "image": "bpl-bathroom/MIddleSectionPavillion.png",
-        "alt": "MIddleSectionPavillion"
-      },
-      {
-        "image": "bpl-bathroom/FloorPlanPavillion.png",
-        "alt": "FloorPlanPavillion"
-      },
-      {
-        "image": "bpl-bathroom/PlotEntryPavillion.png",
-        "alt": "PlotEntryPavillion"
-      },
-      {
-        "image": "bpl-bathroom/DividerViewPavillion.png",
-        "alt": "DividerViewPavillion"
-      },
-      {
-        "image": "bpl-bathroom/HeadOnEntryPerspective.png",
-        "alt": "HeadOnEntryPerspective"
-      },
-      {
-        "image": "bpl-bathroom/SideSectionPavillion.png",
-        "alt": "SideSectionPavillion"
-      }
-    ]
+    "gallery": {
+      "model": [
+        {
+          "image": "bpl-bathroom/NoBackbathroomFront.png",
+          "alt": "NoBackbathroomFront",
+          "colSpan": 3
+        },
+        {
+          "image": "bpl-bathroom/BathroomTopView.png",
+          "alt": "Bathroom Model Top View",
+          "colSpan": 2
+        },
+        {
+          "image": "bpl-bathroom/BathroomPerspective3.jpeg",
+          "alt": "Bathroom Model Garden Perspective"
+        },
+        {
+          "image": "bpl-bathroom/BathroomPerspective.jpeg",
+          "alt": "Bathroom Model Front View"
+        },
+        {
+          "image": "bpl-bathroom/BathroomPerspective2NoBack.png",
+          "alt": "Bathroom Model Entrance"
+        }
+      ],
+      "plans": [
+        {
+          "image": "bpl-bathroom/SitePlanPavillion.png",
+          "alt": "SitePlanPavillion"
+        },
+        {
+          "image": "bpl-bathroom/FloorPlanPavillion.png",
+          "alt": "FloorPlanPavillion"
+        }
+      ],
+      "renderings": [
+        {
+          "image": "bpl-bathroom/PlotEntryPavillion.png",
+          "alt": "PlotEntryPavillion"
+        },
+        {
+          "image": "bpl-bathroom/DividerViewPavillion.png",
+          "alt": "DividerViewPavillion"
+        },
+        {
+          "image": "bpl-bathroom/HeadOnEntryPerspective.png",
+          "alt": "HeadOnEntryPerspective"
+        },
+        {
+          "image": "bpl-bathroom/SideSectionPavillion.png",
+          "alt": "SideSectionPavillion"
+        },
+        {
+          "image": "bpl-bathroom/MIddleSectionPavillion.png",
+          "alt": "MIddleSectionPavillion"
+        }
+      ]
+    }
   },
   {
     "title": "MASONRY CAVITY WALL",
@@ -165,72 +141,69 @@
     "image": "double-house/AngleImage.png",
     "link": "/architecture/double-house",
     "alt": "Double House Angled Image",
-    "gallery": [
-      {
-        "image": "double-house/FinalRefinedDHDrawings-03.png",
-        "alt": "FinalRefinedDHDrawings-03"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-04.png",
-        "alt": "FinalRefinedDHDrawings-04"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-05.png",
-        "alt": "FinalRefinedDHDrawings-05"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-01.png",
-        "alt": "FinalRefinedDHDrawings-01"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-02.png",
-        "alt": "FinalRefinedDHDrawings-02"
-      },
-
-      {
-        "image": "double-house/FinalRefinedDHDrawings-06.png",
-        "alt": "FinalRefinedDHDrawings-06"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-07.png",
-        "alt": "FinalRefinedDHDrawings-07"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-08.png",
-        "alt": "FinalRefinedDHDrawings-08"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-09.png",
-        "alt": "FinalRefinedDHDrawings-09"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-10.png",
-        "alt": "FinalRefinedDHDrawings-10"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-11.png",
-        "alt": "FinalRefinedDHDrawings-11"
-      },
-      {
-        "image": "double-house/FinalRefinedDHDrawings-12.png",
-        "alt": "FinalRefinedDHDrawings-12"
-      },
-      {
-        "image": "double-house/FrontImage.png",
-        "alt": "FrontImage"
-      },
-      {
-        "image": "double-house/TwinHouseUpclose.png",
-        "alt": "TwinHouseUpclose"
-      },
-      {
-        "image": "double-house/AngleImage.png",
-        "alt": "AngleImage"
-      },
-      {
-        "image": "double-house/AstronomerCloseUpImage.png",
-        "alt": "AstronomerCloseUpImage"
-      }
-    ]
+    "gallery": {
+      "model": [
+        { "image": "double-house/FrontImage.png", "alt": "FrontImage" },
+        {
+          "image": "double-house/TwinHouseUpclose.png",
+          "alt": "TwinHouseUpclose"
+        },
+        { "image": "double-house/AngleImage.png", "alt": "AngleImage" },
+        {
+          "image": "double-house/AstronomerCloseUpImage.png",
+          "alt": "AstronomerCloseUpImage"
+        }
+      ],
+      "sections": [
+        {
+          "image": "double-house/FinalRefinedDHDrawings-01.png",
+          "alt": "FinalRefinedDHDrawings-01"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-02.png",
+          "alt": "FinalRefinedDHDrawings-02"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-03.png",
+          "alt": "FinalRefinedDHDrawings-03"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-04.png",
+          "alt": "FinalRefinedDHDrawings-04"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-05.png",
+          "alt": "FinalRefinedDHDrawings-05"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-06.png",
+          "alt": "FinalRefinedDHDrawings-06"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-07.png",
+          "alt": "FinalRefinedDHDrawings-07"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-08.png",
+          "alt": "FinalRefinedDHDrawings-08"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-09.png",
+          "alt": "FinalRefinedDHDrawings-09"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-10.png",
+          "alt": "FinalRefinedDHDrawings-10"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-11.png",
+          "alt": "FinalRefinedDHDrawings-11"
+        },
+        {
+          "image": "double-house/FinalRefinedDHDrawings-12.png",
+          "alt": "FinalRefinedDHDrawings-12"
+        }
+      ]
+    }
   }
 ]

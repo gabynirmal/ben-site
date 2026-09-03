@@ -1,16 +1,7 @@
-import Masonry from "@/components/ui/masonry/Masonry";
 import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import Image from "next/image";
-import * as db from "../../data";
-import { FaMapPin } from "react-icons/fa";
-import Link from "next/link";
 
 export default function CavityWall() {
-  const architecture = db.architecture;
-  const thisProject = architecture.find(
-    (p) => p.link === "/architecture/chinatown-library",
-  );
-
   return (
     <>
       <Box position="relative" h="100vh" style={{ paddingTop: "62px" }}>
@@ -20,7 +11,6 @@ export default function CavityWall() {
           templateRows="repeat(3, 1fr)"
           py="20px"
           px={{ base: "10", md: "30px" }}
-          gap="30px"
           h="100%"
           w="100%"
         >

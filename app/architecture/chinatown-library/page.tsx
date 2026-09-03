@@ -1,4 +1,4 @@
-import Masonry from "@/components/ui/masonry/Masonry";
+import GalleryMasonry from "@/components/ui/masonry/GalleryMasonry";
 import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import * as db from "../../data";
@@ -120,9 +120,7 @@ export default function ChinatownLibrary() {
         </Grid>
       </Box>
 
-      <Box pb="50px">
-        <Masonry db={thisProject?.gallery ?? []} folder="architecture" />
-      </Box>
+      <GalleryMasonry db={thisProject?.gallery} folder="architecture" />
     </>
   );
 }
