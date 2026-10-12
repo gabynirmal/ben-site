@@ -3,6 +3,7 @@ import { Provider } from "@/components/ui/provider";
 import "./globals.css";
 import Navigation from "./Navigation";
 import AboutDev from "./about/AboutDev";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Benjamin Smith",
@@ -16,13 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en" className={`h-full antialiased`}>
-      <head>
+      <head suppressHydrationWarning>
         <link rel="stylesheet" href="https://use.typekit.net/znb5yce.css" />
       </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <Provider>
           <Navigation />
           <AboutDev />
+          <Analytics />
           {children}
         </Provider>
       </body>

@@ -9,13 +9,6 @@
   --chakra-fonts-body: "franklin-gothic-atf", sans-serif;
 }
 
-:root.dark {
-  --background: #f0f0f0;
-  --foreground: #1d2128;
-  --link-hover: #5a6673;
-  --link-hover-opp: #b8ab9e;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
