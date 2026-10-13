@@ -45,7 +45,12 @@ export default function DoubleHouse() {
 
           <GridItem colSpan={2}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+              <Heading
+                size="2xl"
+                letterSpacing="wide"
+                fontWeight="500"
+                color="var(--emphasis)"
+              >
                 THE COMPOUND
               </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">

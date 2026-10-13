@@ -14,7 +14,12 @@ export default function Sketchbook() {
     >
       <GridItem colSpan={2}>
         <Flex justifyContent="space-between" pb="15px" py="20px" gap="100px">
-          <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+          <Heading
+            size="2xl"
+            letterSpacing="wide"
+            fontWeight="500"
+            color="var(--emphasis)"
+          >
             SKETCHBOOK OF LANDSCAPE STUDIES AND SEMI-RELEVANT THOUGHTS AND
             ANECDOTES
           </Heading>

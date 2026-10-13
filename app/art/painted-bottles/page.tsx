@@ -17,7 +17,12 @@ export default function PaintedBottles() {
         >
           <GridItem rowSpan={3}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+              <Heading
+                size="2xl"
+                letterSpacing="wide"
+                fontWeight="500"
+                color="var(--emphasis)"
+              >
                 PAINTED BOTTLES
               </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">

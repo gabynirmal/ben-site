@@ -11,7 +11,12 @@ export default function EssenceOfBoston() {
     >
       <GridItem>
         <Flex justifyContent="space-between" pb="15px" py="20px" gap="100px">
-          <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+          <Heading
+            size="2xl"
+            letterSpacing="wide"
+            fontWeight="500"
+            color="var(--emphasis)"
+          >
             ESSENCE OF BOSTON
           </Heading>
           <Text as="p" textStyle="2xl" fontStyle="italic">

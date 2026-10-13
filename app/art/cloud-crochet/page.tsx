@@ -28,7 +28,12 @@ export default function CloudCrochet() {
           </GridItem>
           <GridItem rowSpan={1}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+              <Heading
+                size="2xl"
+                letterSpacing="wide"
+                fontWeight="500"
+                color="var(--emphasis)"
+              >
                 EYES OF THE WORLD
               </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">

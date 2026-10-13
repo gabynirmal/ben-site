@@ -68,7 +68,12 @@ export default function NirmalClothing() {
 
         <GridItem colSpan={2}>
           <Flex justifyContent="space-between" pb="15px">
-            <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+            <Heading
+              size="2xl"
+              letterSpacing="wide"
+              fontWeight="500"
+              color="var(--emphasis)"
+            >
               NIRMAL CLOTHING
             </Heading>
             <Text as="p" textStyle="2xl" fontStyle="italic">

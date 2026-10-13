@@ -17,7 +17,12 @@ export default function Jerry() {
         >
           <GridItem colSpan={2} rowSpan={2}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+              <Heading
+                size="2xl"
+                letterSpacing="wide"
+                fontWeight="500"
+                color="var(--emphasis)"
+              >
                 JERRY GARCIA TAPESTRY
               </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">

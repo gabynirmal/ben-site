@@ -12,7 +12,12 @@ export default function LearningTheHardWay() {
         px={{ base: "10", md: "30px" }}
       >
         <Flex justifyContent="space-between" pb="15px" py="20px" gap="100px">
-          <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+          <Heading
+            size="2xl"
+            letterSpacing="wide"
+            fontWeight="500"
+            color="var(--emphasis)"
+          >
             LEARNING THE HARD WAY
           </Heading>
           <Text as="p" textStyle="2xl" fontStyle="italic">

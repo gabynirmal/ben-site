@@ -13,10 +13,16 @@ export default function CavityWall() {
           px={{ base: "10", md: "30px" }}
           h="100%"
           w="100%"
+          gap="30px"
         >
           <GridItem rowSpan={3}>
             <Flex justifyContent="space-between" pb="15px">
-              <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+              <Heading
+                size="2xl"
+                letterSpacing="wide"
+                fontWeight="500"
+                color="var(--emphasis)"
+              >
                 MASONRY CAVITY WALL
               </Heading>
               <Text as="p" textStyle="2xl" fontStyle="italic">

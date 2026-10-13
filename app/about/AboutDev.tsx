@@ -1,5 +1,4 @@
-import { Flex, Text, Icon, Popover, Portal } from "@chakra-ui/react";
-import { MdComputer } from "react-icons/md";
+import { Flex, Text, Popover, Portal } from "@chakra-ui/react";
 import Image from "next/image";
 
 export default function AboutDev() {
@@ -28,8 +27,8 @@ export default function AboutDev() {
           }}
           transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
         >
-          <img
-            src="/dev/GNLogoDB.png"
+          <Image
+            src="/design/nirmal-clothing/Asset 6@300x.png"
             alt="Gabriela Nirmal Logo"
             width={40}
             height={40}
@@ -39,8 +38,14 @@ export default function AboutDev() {
       </Popover.Trigger>
       <Portal>
         <Popover.Positioner>
-          <Popover.Content zIndex={"tooltip"} bgColor="var(--link-hover)">
-            <Popover.Body color="var(--background)">
+          <Popover.Content
+            zIndex={"tooltip"}
+            bgColor="var(--link-hover)"
+            borderRadius="2xl"
+            bg="rgba(200, 200, 200, 0.2)"
+            backdropFilter="blur(6px)"
+          >
+            <Popover.Body>
               <Popover.Title fontWeight="medium" letterSpacing="wide">
                 ABOUT THE DEV
               </Popover.Title>
