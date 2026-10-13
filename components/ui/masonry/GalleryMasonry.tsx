@@ -8,6 +8,10 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+import "yet-another-react-lightbox/plugins/captions.css";
+import "yet-another-react-lightbox/plugins/counter.css";
 import { useMemo, useState } from "react";
 
 type GalleryItem = {
@@ -46,12 +50,20 @@ export default function GalleryMasonry({
     return { flatItems: flat, groupOffsets: offsets };
   }, [groups]);
 
+  const optimized = (path: string, w: number) =>
+    `/_next/image?url=${encodeURIComponent(path)}&w=${w}&q=75`;
+
   const masonrySlides = useMemo(
     () =>
-      flatItems.map((project) => ({
-        src: `/${folder}/${project.image}`,
-        alt: project.alt,
-      })),
+      flatItems.map((project) => {
+        const path = `/${folder}/${project.image}`;
+        return {
+          src: optimized(path, 1920),
+          thumbnail: optimized(path, 128),
+          alt: project.alt,
+          title: project.title,
+        };
+      }),
     [flatItems, folder],
   );
 
@@ -112,23 +124,34 @@ export default function GalleryMasonry({
           </Grid>
         </Box>
       ))}
-
       <Lightbox
         open={index >= 0}
         close={() => setIndex(-1)}
         index={index}
         slides={masonrySlides}
-        plugins={[Thumbnails, Zoom]}
+        plugins={[Thumbnails, Zoom, Counter, Captions]}
+        animation={{ fade: 300, swipe: 400 }}
+        carousel={{ padding: 24, spacing: 0.1, finite: false }}
+        controller={{ closeOnBackdropClick: true }}
+        zoom={{ maxZoomPixelRatio: 3, scrollToZoom: true }}
+        counter={{ container: { style: { top: 0, bottom: "unset" } } }}
+        captions={{ descriptionTextAlign: "center" }}
         thumbnails={{
           position: "bottom",
-          width: 120,
-          height: 60,
-          imageFit: "contain",
+          width: 72,
+          height: 72,
+          imageFit: "cover",
+          border: 0,
+          borderRadius: 4,
+          padding: 0,
+          gap: 10,
           vignette: false,
+          showToggle: true,
         }}
         styles={{
-          container: { backgroundColor: "rgba(0, 0, 0, .9)" },
-          thumbnailsContainer: { backgroundColor: "rgba(0, 0, 0, .9)" },
+          container: { backgroundColor: "var(--background)" },
+          thumbnailsContainer: { backgroundColor: "var(--background)" },
+          thumbnail: { backgroundColor: "transparent" },
         }}
       />
     </Box>

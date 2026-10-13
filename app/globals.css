@@ -25,3 +25,25 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
+.yarl__root .yarl__button,
+.yarl__root .yarl__icon,
+.yarl__root .yarl__counter,
+.yarl__root .yarl__toolbar,
+.yarl__root .yarl__navigation_prev,
+.yarl__root .yarl__navigation_next {
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+.yarl__root {
+  --yarl__color_backdrop: var(--background);
+  --yarl__color_button: #1d2128;
+  --yarl__color_button_active: #5a6673;
+  --yarl__color_button_disabled: #000;
+  --yarl__slide_title_color: #000;
+  --yarl__slide_description_color: rgba(0, 0, 0, 0.7);
+  --yarl__thumbnails_thumbnail_active_border_color: var(--emphasis);
+  --yarl__font_family: inherit;
+  --yarl__button_filter: none;
+}
