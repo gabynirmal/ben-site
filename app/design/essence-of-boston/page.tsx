@@ -8,9 +8,10 @@ export default function EssenceOfBoston() {
       paddingTop="62px"
       h="100vh"
       px={{ base: "10", md: "30px" }}
+      gap="30px"
     >
       <GridItem>
-        <Flex justifyContent="space-between" pb="15px" py="20px" gap="100px">
+        <Flex direction="column" pb="15px" py="20px" gap="15px">
           <Heading
             size="2xl"
             letterSpacing="wide"
