@@ -4,8 +4,8 @@
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:/Users/bensmith/Desktop/Algoritmic GD/07 Benjamin Folder/Document fonts/AdobeFnt25.lst
-FileLength:1210
+OutlineFileName:/Users/gabynirmal/github repos/ben-site/public/design/learning-the-hard-way/Document fonts/AdobeFnt25.lst
+FileLength:1414
 FileModTime:798352929
 %EndFont
 
@@ -22,7 +22,7 @@ WidthClass:5
 AngleClass:0
 FullName:Gotham Bold
 WritingScript:Roman
-OutlineFileName:/Users/bensmith/Desktop/Algoritmic GD/07 Benjamin Folder/Document fonts/Gotham-Bold.otf
+OutlineFileName:/Users/gabynirmal/github repos/ben-site/public/design/learning-the-hard-way/Document fonts/Gotham-Bold.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -52,7 +52,7 @@ WidthClass:5
 AngleClass:0
 FullName:Satoshi Variable Bold
 WritingScript:Roman
-OutlineFileName:/Users/bensmith/Desktop/Algoritmic GD/07 Benjamin Folder/Document fonts/Satoshi-Variable.ttf
+OutlineFileName:/Users/gabynirmal/github repos/ben-site/public/design/learning-the-hard-way/Document fonts/Satoshi-Variable.ttf
 DataFormat:sfntData
 hasSVG:no
 hasSBIX:no

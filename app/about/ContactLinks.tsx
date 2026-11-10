@@ -14,6 +14,7 @@ export default function ContactLinks(props: FlexProps) {
         borderRadius="full"
         bgColor="var(--link-hover)"
         _hover={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
+        _active={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
         transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
       >
         <Link href="resume.pdf" target="_blank">
@@ -29,6 +30,7 @@ export default function ContactLinks(props: FlexProps) {
         borderRadius="full"
         bgColor="var(--link-hover)"
         _hover={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
+        _active={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
         transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
       >
         <Link href="mailto:smith.benj@northeastern.edu" target="_blank">
@@ -44,6 +46,7 @@ export default function ContactLinks(props: FlexProps) {
         borderRadius="full"
         bgColor="var(--link-hover)"
         _hover={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
+        _active={{ bgColor: "var(--foreground)", color: "var(--link-hover)" }}
         transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out"
       >
         <Link

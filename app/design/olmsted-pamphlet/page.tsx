@@ -61,7 +61,12 @@ export default function OlmstedPamphlet() {
         </Grid>
 
         {/* Bottom Section: Stacked Full-Width Images (Appears below the fold on scroll) */}
-        <Flex direction="column" gap="30px" w="100%" py="40px">
+        <Flex
+          direction="column"
+          gap="30px"
+          w="100%"
+          p={{ base: "0px", xl: "100px" }}
+        >
           <Box w="100%">
             <Image
               src="/design/olmsted-pamphlet/LeafletFinalback.png"
@@ -74,7 +79,7 @@ export default function OlmstedPamphlet() {
           </Box>
           <Box w="100%">
             <Image
-              src="/design/olmsted-pamphlet/LeafletFinalback.png"
+              src="/design/olmsted-pamphlet/frontBackSpread-1.png"
               width={1920}
               height={1080}
               style={{ width: "100%", height: "auto" }}
@@ -84,7 +89,7 @@ export default function OlmstedPamphlet() {
           </Box>
           <Box w="100%">
             <Image
-              src="/design/olmsted-pamphlet/LeafletFinalback.png"
+              src="/design/olmsted-pamphlet/frontBackSpread-2.png"
               width={1920}
               height={1080}
               style={{ width: "100%", height: "auto" }}

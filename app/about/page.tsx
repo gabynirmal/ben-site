@@ -1,18 +1,9 @@
 "use client";
 
-import {
-  Flex,
-  Text,
-  Grid,
-  Icon,
-  Popover,
-  Portal,
-  GridItem,
-} from "@chakra-ui/react";
+import { Flex, Text, Grid, GridItem } from "@chakra-ui/react";
 import Image from "next/image";
 import ContactLinks from "./ContactLinks";
 import { useState, useEffect } from "react";
-import AboutDev from "./AboutDev";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,11 +32,10 @@ export default function About() {
       {/* Grid overlay */}
       <Grid
         templateColumns="repeat(3, 1fr)"
-        gap="40px"
         position="absolute"
         w="100%"
         h="100vh"
-        p="10"
+        p={{ base: 5, md: 10 }}
       >
         {/* Mobile Spacer Third Column - text */}
         <GridItem
@@ -55,7 +45,7 @@ export default function About() {
         {/* First column Desktop - text */}
         <Flex
           flexDirection="column"
-          pb="20px"
+          pb="50px"
           justifyContent="flex-end"
           opacity={isVisible ? 1 : 0}
           transform={isVisible ? "translateY(0)" : "translateY(20px)"}
@@ -63,10 +53,10 @@ export default function About() {
         >
           <Text
             as="p"
-            color="var(--background)"
+            color={{ base: "var(--foreground)", lg: "var(--background)" }}
             textAlign={{ base: "right", lg: "left" }}
           >
-            Hi, I’m Benjamin Smith, a third-year Architectural Studies and
+            Hi, I’m Benjamin Smith, a fourth-year Architectural Studies and
             Design major at Northeastern University. I’m particularly interested
             in sustainable design and creating spaces that consider the needs of
             all living things. I believe green space plays a vital role in
@@ -78,7 +68,7 @@ export default function About() {
             crochet, which has become a creative outlet alongside my love for
             discovering new music.
           </Text>
-          <ContactLinks mt="6" />
+          <ContactLinks mt="6" ml={{ base: "auto", lg: "0" }} />
         </Flex>
       </Grid>
     </>

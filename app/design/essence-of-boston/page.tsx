@@ -10,14 +10,9 @@ export default function EssenceOfBoston() {
       px={{ base: "10", md: "30px" }}
       gap="30px"
     >
-      <GridItem>
-        <Flex direction="column" pb="15px" py="20px" gap="15px">
-          <Heading
-            size="2xl"
-            letterSpacing="wide"
-            fontWeight="500"
-            color="var(--emphasis)"
-          >
+      <GridItem display="flex" flexDirection="column" gap="20px" pt="20px">
+        <Flex flexDirection="column">
+          <Heading size="2xl" letterSpacing="wide" fontWeight="500">
             ESSENCE OF BOSTON
           </Heading>
           <Text as="p" textStyle="2xl" fontStyle="italic">

@@ -1,5 +1,4 @@
-import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
-import Image from "next/image";
+import { Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 
 export default function Sketchbook() {
   return (
@@ -11,9 +10,10 @@ export default function Sketchbook() {
       paddingTop="62px"
       h="100vh"
       px={{ base: "10", md: "30px" }}
+      gap="30px"
     >
-      <GridItem colSpan={2}>
-        <Flex justifyContent="space-between" pb="15px" py="20px" gap="100px">
+      <GridItem display="flex" flexDirection="column" pt="20px" gap="20px">
+        <Flex flexDirection="column">
           <Heading
             size="2xl"
             letterSpacing="wide"
@@ -24,7 +24,7 @@ export default function Sketchbook() {
             ANECDOTES
           </Heading>
           <Text as="p" textStyle="2xl" fontStyle="italic">
-            2025
+            2025 | Book
           </Text>
         </Flex>
 
@@ -36,7 +36,7 @@ export default function Sketchbook() {
           than compete with the drawings.
         </Text>
       </GridItem>
-      <GridItem colSpan={3} rowSpan={3}>
+      <GridItem colSpan={4} rowSpan={3}>
         <iframe
           allowFullScreen={true}
           allow="clipboard-write"
