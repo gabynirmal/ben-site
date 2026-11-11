@@ -4,28 +4,42 @@ import Image from "next/image";
 export default function Jerry() {
   return (
     <>
-      <Box position="relative" h="100vh" style={{ paddingTop: "62px" }}>
+      <Box
+        position="relative"
+        h={{ base: "auto", md: "100dvh" }}
+        style={{ paddingTop: "62px" }}
+      >
         <Grid
           id="bs-art-cloud-crochet"
-          templateColumns="repeat(5, 1fr)"
-          templateRows="repeat(2, 1fr)"
+          templateColumns={{ base: "1fr", md: "repeat(5, 1fr)" }}
+          templateRows={{ base: "auto", md: "repeat(2, 1fr)" }}
           py="20px"
-          px={{ base: "10", md: "30px" }}
-          gap="30px"
-          h="100%"
+          px={{ base: "4", md: "30px" }}
+          gap={{ base: "16px", md: "30px" }}
+          h={{ base: "auto", md: "100%" }}
           w="100%"
         >
-          <GridItem colSpan={2} rowSpan={2}>
-            <Flex justifyContent="space-between" pb="15px">
+          <GridItem colSpan={{ base: 1, md: 2 }} rowSpan={{ base: 1, md: 2 }}>
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              justifyContent="space-between"
+              gap={{ base: "4px", md: "16px" }}
+              pb="15px"
+            >
               <Heading
-                size="2xl"
+                size={{ base: "xl", md: "2xl" }}
                 letterSpacing="wide"
                 fontWeight="500"
                 color="var(--emphasis)"
               >
                 JERRY GARCIA TAPESTRY
               </Heading>
-              <Text as="p" textStyle="2xl" fontStyle="italic">
+              <Text
+                as="p"
+                textStyle={{ base: "lg", md: "2xl" }}
+                fontStyle="italic"
+                flexShrink={0}
+              >
                 2025 | Crochet
               </Text>
             </Flex>
@@ -38,13 +52,18 @@ export default function Jerry() {
               in true Grateful Dead fashion.
             </Text>
           </GridItem>
-          <GridItem position="relative" colSpan={3} rowSpan={2} overflow="auto">
+          <GridItem
+            position="relative"
+            colSpan={{ base: 1, md: 3 }}
+            rowSpan={{ base: 1, md: 2 }}
+            overflow="auto"
+          >
             <Image
               src="/art/jerry/JerryGarciaTapestry.png"
               width={900}
               height={900}
-              style={{ marginLeft: "auto" }}
-              alt="clouds"
+              style={{ width: "100%", height: "auto", marginLeft: "auto" }}
+              alt="Jerry Garcia tapestry"
               loading="eager"
             />
           </GridItem>

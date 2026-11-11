@@ -29,7 +29,7 @@ export default function GalleryMasonry({
   db?: any;
   folder: string;
 }) {
-  const gallerySpacing = "30px";
+  const gallerySpacing = { base: "16px", md: "30px" } as const;
   const [index, setIndex] = useState(-1);
 
   const groups = useMemo<[string, GalleryItem[]][]>(() => {
@@ -72,7 +72,7 @@ export default function GalleryMasonry({
   return (
     <Box pb={gallerySpacing} p={gallerySpacing}>
       {groups.map(([groupName, items], groupIdx) => (
-        <Box key={groupName} pt={groupIdx > 0 ? "30px" : ""}>
+        <Box key={groupName} pt={groupIdx > 0 ? gallerySpacing : ""}>
           <Heading size="lg" fontWeight={500} textTransform="uppercase">
             {groupName.replace(/([A-Z])/g, " $1")}
           </Heading>
@@ -100,6 +100,10 @@ export default function GalleryMasonry({
                       "& .overlay": { opacity: 1 },
                       ...(!project?.link && { transform: "scale(1.06)" }),
                     }}
+                    _active={{
+                      "& .overlay": { opacity: 1 },
+                      ...(!project?.link && { transform: "scale(1.03)" }),
+                    }}
                     css={{ breakInside: "avoid" }}
                     onClick={
                       !project?.link ? () => setIndex(globalIndex) : undefined
@@ -111,12 +115,43 @@ export default function GalleryMasonry({
                       alt={project.alt}
                       width={900}
                       height={900}
+                      sizes="(max-width: 768px) 50vw, 33vw"
+                      loading="lazy"
                       style={{
                         width: "100%",
                         height: "auto",
                         display: "block",
                       }}
                     />
+
+                    {project?.title && (
+                      <Box
+                        className="overlay"
+                        position="absolute"
+                        top="0"
+                        left="0"
+                        w="100%"
+                        h="100%"
+                        bg="blackAlpha.600"
+                        opacity={{ base: 1, md: 0 }}
+                        transition="opacity 0.3s ease"
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                        zIndex={1}
+                      >
+                        <Heading
+                          size={{ base: "md", md: "2xl" }}
+                          fontWeight={500}
+                          letterSpacing="wide"
+                          color="white"
+                          textAlign="center"
+                          p={{ base: "10px", md: "20px" }}
+                        >
+                          {project.title}
+                        </Heading>
+                      </Box>
+                    )}
                   </Box>
                 </MasonryItem>
               );

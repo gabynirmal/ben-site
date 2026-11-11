@@ -16,7 +16,7 @@ export default function About() {
   return (
     <>
       {/* Background Image */}
-      <Flex position="absolute" top="0" left="0" w="100vw" h="100vh">
+      <Flex position="absolute" top="0" left="0" w="100%" h="100dvh">
         <Image
           src="/photography/IMG_4243.JPG"
           alt="Image of Benjamin Smith on Mount Olympus"
@@ -34,7 +34,7 @@ export default function About() {
         templateColumns="repeat(3, 1fr)"
         position="absolute"
         w="100%"
-        h="100vh"
+        h="100dvh"
         p={{ base: 5, md: 10 }}
       >
         {/* Mobile Spacer Third Column - text */}
@@ -53,6 +53,8 @@ export default function About() {
         >
           <Text
             as="p"
+            fontSize={{ base: "sm", md: "md" }}
+            lineHeight={{ base: "snug", lg: "normal" }}
             color={{ base: "var(--foreground)", lg: "var(--background)" }}
             textAlign={{ base: "right", lg: "left" }}
           >
@@ -68,7 +70,10 @@ export default function About() {
             crochet, which has become a creative outlet alongside my love for
             discovering new music.
           </Text>
-          <ContactLinks mt="6" ml={{ base: "auto", lg: "0" }} />
+          <ContactLinks
+            mt={{ base: 4, lg: 6 }}
+            ml={{ base: "auto", lg: "0" }}
+          />
         </Flex>
       </Grid>
     </>

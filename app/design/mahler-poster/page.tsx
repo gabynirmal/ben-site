@@ -9,6 +9,7 @@ interface MahlerPosterItemProps {
   i: number;
   pageLoaded: boolean;
   setMainImage: (poster: string) => void;
+  isActive: boolean;
 }
 
 const MahlerPosterItem = ({
@@ -16,16 +17,19 @@ const MahlerPosterItem = ({
   i,
   pageLoaded,
   setMainImage,
+  isActive,
 }: MahlerPosterItemProps) => {
   return (
     <Box
-      transition="transform 0.3s ease-in-out"
+      transition="transform 0.3s ease-in-out, opacity 0.2s ease-in-out"
       style={{
         animation: pageLoaded
           ? `scalePop 0.6s ease-in-out ${i * 150}ms`
           : "none",
       }}
-      _hover={{ transform: "scale(1.1)" }}
+      opacity={isActive ? 1 : 0.7}
+      _hover={{ transform: "scale(1.1)", opacity: 1 }}
+      _active={{ transform: "scale(1.05)", opacity: 1 }}
     >
       <Image
         src={`/design/mahler-poster/${poster}`}
@@ -69,7 +73,11 @@ export default function MahlerPoster() {
   }, []);
 
   return (
-    <Box position="relative" h="100vh" style={{ paddingTop: "62px" }}>
+    <Box
+      position="relative"
+      h={{ base: "auto", md: "100dvh" }}
+      style={{ paddingTop: "62px" }}
+    >
       <style jsx global>{`
         @keyframes scalePop {
           0% {
@@ -86,16 +94,23 @@ export default function MahlerPoster() {
 
       <Grid
         id="bs-design-mahler-poster"
-        templateColumns="repeat(12, 1fr)"
-        templateRows="repeat(4, 1fr)"
+        templateColumns={{ base: "1fr", md: "repeat(12, 1fr)" }}
+        templateRows={{ base: "auto", md: "repeat(4, 1fr)" }}
         py="20px"
-        px={{ base: "10", md: "30px" }}
-        gap="30px"
-        h="100%"
+        px={{ base: "4", md: "30px" }}
+        gap={{ base: "16px", md: "30px" }}
+        h={{ base: "auto", md: "100%" }}
         w="100%"
       >
-        <GridItem colSpan={6}>
-          <Grid templateColumns="repeat(6, 1fr)" gap="30px" alignItems="start">
+        <GridItem colSpan={{ base: 1, md: 6 }} order={{ base: 3, md: 0 }}>
+          <Grid
+            templateColumns={{
+              base: "repeat(4, 1fr)",
+              md: "repeat(6, 1fr)",
+            }}
+            gap={{ base: "10px", md: "30px" }}
+            alignItems="start"
+          >
             {posters.map((poster, i) => (
               <MahlerPosterItem
                 key={poster}
@@ -103,12 +118,20 @@ export default function MahlerPoster() {
                 i={i}
                 pageLoaded={pageLoaded}
                 setMainImage={setMainImage}
+                isActive={mainImage === poster}
               />
             ))}
           </Grid>
         </GridItem>
 
-        <GridItem position="relative" colSpan={6} rowSpan={4}>
+        <GridItem
+          position="relative"
+          colSpan={{ base: 1, md: 6 }}
+          rowSpan={{ base: 1, md: 4 }}
+          h={{ base: "420px", md: "auto" }}
+          minH={{ base: "420px", md: "0" }}
+          order={{ base: 2, md: 0 }}
+        >
           <Image
             src={`/design/mahler-poster/${mainImage}`}
             fill
@@ -119,12 +142,27 @@ export default function MahlerPoster() {
           />
         </GridItem>
 
-        <GridItem colSpan={4}>
-          <Flex justifyContent="space-between" pb="15px">
-            <Heading size="2xl" letterSpacing="wide" fontWeight="500">
+        <GridItem colSpan={{ base: 1, md: 4 }} order={{ base: 1, md: 0 }}>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            justifyContent="space-between"
+            gap={{ base: "4px", md: "16px" }}
+            pb="15px"
+          >
+            <Heading
+              size={{ base: "xl", md: "2xl" }}
+              letterSpacing="wide"
+              fontWeight="500"
+              color="var(--emphasis)"
+            >
               MAHLER POSTER
             </Heading>
-            <Text as="p" textStyle="2xl" fontStyle="italic">
+            <Text
+              as="p"
+              textStyle={{ base: "lg", md: "2xl" }}
+              fontStyle="italic"
+              flexShrink={0}
+            >
               2026 | Poster
             </Text>
           </Flex>

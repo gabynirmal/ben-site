@@ -13,60 +13,103 @@ export default function ChinatownLibrary() {
 
   return (
     <>
-      <Box position="relative" h="100vh" style={{ paddingTop: "62px" }}>
+      <Box
+        position="relative"
+        w="100%"
+        pt={{ base: "70px", md: "82px" }} // Safe spacing below your header
+        pb="40px"
+      >
         <Grid
           id="bs-arch-chinatown-library"
-          templateColumns="repeat(3, 1fr)"
-          templateRows="repeat(4, 1fr)"
-          py="20px"
-          px={{ base: "10", md: "30px" }}
-          gap="30px"
-          h="100%"
+          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+          templateRows={{ base: "auto", md: "repeat(4, minmax(0, 1fr))" }}
+          px={{ base: "4", md: "30px" }}
+          gap={{ base: "16px", md: "30px" }}
           w="100%"
         >
-          <GridItem position="relative" rowSpan={1}>
+          {/* Image 1 */}
+          <GridItem
+            position="relative"
+            h={{ base: "220px", md: "auto" }}
+            minH={{ md: "150px" }}
+            order={{ base: 2, md: 0 }}
+            overflow="hidden"
+            borderRadius="sm"
+          >
             <Image
               src="/architecture/bpl-library/LibraryTopFloorView.png"
-              width={900}
-              height={900}
-              style={{ width: "100%", height: "auto" }}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              style={{ objectFit: "cover" }}
               alt="Library Top Floor View"
               loading="eager"
             />
           </GridItem>
 
-          <GridItem position="relative" rowSpan={1}>
+          {/* Image 2 */}
+          <GridItem
+            position="relative"
+            h={{ base: "220px", md: "auto" }}
+            minH={{ md: "150px" }}
+            order={{ base: 3, md: 0 }}
+            overflow="hidden"
+            borderRadius="sm"
+          >
             <Image
               src="/architecture/bpl-library/LibrarySiteEntranceRender.png"
-              width={900}
-              height={900}
-              style={{ width: "100%", height: "auto" }}
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              style={{ objectFit: "cover" }}
               alt="Library Site Entrance Render"
               loading="eager"
             />
           </GridItem>
 
-          <GridItem rowSpan={4} position="relative">
+          {/* Image 3 */}
+          <GridItem
+            position="relative"
+            h={{ base: "260px", md: "auto" }}
+            rowSpan={{ base: 1, md: 4 }}
+            order={{ base: 4, md: 0 }}
+            overflow="hidden"
+            borderRadius="sm"
+          >
             <Image
               src="/architecture/bpl-library/LibrarySitePlan.png"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               style={{ objectFit: "cover" }}
               alt="Library Site Plan"
               loading="eager"
             />
           </GridItem>
 
-          <GridItem colSpan={2} rowSpan={2}>
-            <Flex justifyContent="space-between" pb="15px">
+          {/* Text Content */}
+          <GridItem
+            colSpan={{ base: 1, md: 2 }}
+            rowSpan={{ base: 1, md: 4 }}
+            order={{ base: 1, md: 0 }}
+          >
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              justifyContent="space-between"
+              gap={{ base: "4px", md: "16px" }}
+              pb="15px"
+            >
               <Heading
-                size="2xl"
+                size={{ base: "xl", md: "2xl" }}
                 letterSpacing="wide"
                 fontWeight="500"
                 color="var(--emphasis)"
               >
                 THE STACKS: BOSTON CHINATOWN LIBRARY
               </Heading>
-              <Text as="p" textStyle="2xl" fontStyle="italic">
+              <Text
+                as="p"
+                textStyle={{ base: "lg", md: "2xl" }}
+                fontStyle="italic"
+                flexShrink={0}
+              >
                 2026 | Library
               </Text>
             </Flex>
@@ -80,11 +123,13 @@ export default function ChinatownLibrary() {
                 alignItems="center"
                 color="var(--foreground)"
                 _hover={{ color: "var(--link-hover)" }}
+                _active={{ color: "var(--link-hover)" }}
+                transition="color 0.2s ease-in-out"
               >
                 <FaMapPin />
                 <Text
                   as="p"
-                  textStyle="xl"
+                  textStyle={{ base: "md", md: "xl" }}
                   textDecoration="underline"
                   textDecorationThickness="1px"
                 >
@@ -107,8 +152,8 @@ export default function ChinatownLibrary() {
               the site, growing vertically rather than outward. Midway up the
               building, an outdoor green terrace divides the program into two
               zones: the active ground floors housing a café, lecture hall, and
-              children's section, and the quieter upper floors reserved for the
-              main collection and reading areas.
+              children&apos;s section, and the quieter upper floors reserved for
+              the main collection and reading areas.
               <br />
               <br />
               The structure is built almost entirely from Cross-laminated timber
@@ -116,12 +161,10 @@ export default function ChinatownLibrary() {
               either side of the central opening, housing the elevators and
               bathrooms. To maximize spatial efficiency, every wall and railing
               is lined with stacked bookshelves set behind UV-protective glass,
-              unifying the interior storage system with the building's facade of
-              clean, continuous horizontal lines.
+              unifying the interior storage system with the building&apos;s
+              facade of clean, continuous horizontal lines.
             </Text>
           </GridItem>
-
-          <GridItem colSpan={2} />
         </Grid>
       </Box>
 

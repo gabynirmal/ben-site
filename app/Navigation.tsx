@@ -41,7 +41,7 @@ export default function Navigation(props: FlexProps) {
       py="15px"
       px={{ base: "4", md: "30px" }}
       justifyContent="space-between"
-      alignItems="flex-end"
+      alignItems="center"
       position="fixed"
       w="100%"
       zIndex="docked"
@@ -53,12 +53,17 @@ export default function Navigation(props: FlexProps) {
     >
       <Link href="/">
         <Heading
-          size="3xl"
+          size={{ base: "xl", md: "2xl", lg: "3xl" }}
           fontWeight="500"
           letterSpacing="wide"
           whiteSpace="nowrap"
           color={pathname === "/" ? "var(--emphasis)" : "var(--foreground)"}
           _hover={
+            pathname === "/"
+              ? { color: "var(--emphasis)" }
+              : { color: "var(--link-hover)" }
+          }
+          _active={
             pathname === "/"
               ? { color: "var(--emphasis)" }
               : { color: "var(--link-hover)" }
@@ -81,6 +86,11 @@ export default function Navigation(props: FlexProps) {
                   : "var(--foreground)"
               }
               _hover={
+                pathname.includes(link.toLowerCase())
+                  ? { color: "var(--emphasis)" }
+                  : { color: "var(--link-hover)" }
+              }
+              _active={
                 pathname.includes(link.toLowerCase())
                   ? { color: "var(--emphasis)" }
                   : { color: "var(--link-hover)" }

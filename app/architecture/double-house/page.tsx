@@ -2,7 +2,6 @@ import GalleryMasonry from "@/components/ui/masonry/GalleryMasonry";
 import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import * as db from "../../data";
-import Link from "next/link";
 
 export default function DoubleHouse() {
   const architecture = db.architecture;
@@ -12,68 +11,89 @@ export default function DoubleHouse() {
 
   return (
     <>
-      <Box position="relative" h="100vh" style={{ paddingTop: "62px" }}>
+      <Box
+        position="relative"
+        h={{ base: "auto", md: "100dvh" }}
+        style={{ paddingTop: "62px" }}
+      >
         <Grid
           id="bs-arch-chinatown-bathroom"
-          templateColumns="repeat(3, 1fr)"
-          templateRows="repeat(3, 1fr)"
+          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+          templateRows={{ base: "auto", md: "repeat(3, 1fr)" }}
           py="20px"
-          px={{ base: "10", md: "30px" }}
-          gap="30px"
-          h="100%"
+          px={{ base: "4", md: "30px" }}
+          gap={{ base: "16px", md: "30px" }}
+          h={{ base: "auto", md: "100%" }}
           w="100%"
         >
-          <GridItem position="relative" rowSpan={2} colSpan={2}>
+          <GridItem
+            position="relative"
+            rowSpan={{ base: 1, md: 2 }}
+            colSpan={{ base: 1, md: 2 }}
+            h={{ base: "260px", md: "auto" }}
+            order={{ base: 2, md: 0 }}
+          >
             <Image
               src="/architecture/double-house/FinalRefinedDHDrawings-10.png"
               fill
               style={{ objectFit: "cover", objectPosition: "center 10%" }}
-              alt="Library Site Plan"
+              alt="Double House Drawing"
               loading="eager"
             />
           </GridItem>
 
-          <GridItem rowSpan={3} position="relative">
+          <GridItem
+            rowSpan={{ base: 1, md: 3 }}
+            position="relative"
+            h={{ base: "320px", md: "auto" }}
+            order={{ base: 3, md: 0 }}
+          >
             <Image
               src="/architecture/double-house/FinalRefinedDHDrawings-06.png"
               fill
               style={{ objectFit: "cover" }}
-              alt="Library Site Plan"
+              alt="Double House Elevation"
               loading="eager"
             />
           </GridItem>
 
-          <GridItem colSpan={2}>
-            <Flex justifyContent="space-between" pb="15px">
+          <GridItem colSpan={{ base: 1, md: 2 }} order={{ base: 1, md: 0 }}>
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              justifyContent="space-between"
+              gap={{ base: "4px", md: "16px" }}
+              pb="15px"
+            >
               <Heading
-                size="2xl"
+                size={{ base: "xl", md: "2xl" }}
                 letterSpacing="wide"
                 fontWeight="500"
                 color="var(--emphasis)"
               >
                 THE COMPOUND
               </Heading>
-              <Text as="p" textStyle="2xl" fontStyle="italic">
+              <Text
+                as="p"
+                textStyle={{ base: "lg", md: "2xl" }}
+                fontStyle="italic"
+                flexShrink={0}
+              >
                 2025 | Double House
               </Text>
             </Flex>
-            <Link
-              href="https://maps.app.goo.gl/P7J1p7ck8cX9CxF37?g_st=i&utm_campaign=ac-im"
-              target="_blank"
-            ></Link>
             <Text as="p" textStyle="md">
               This compound explores the concept of multi-family living by
               designing two distinct homes around the personalities and needs of
               their occupants — a solitary astronomer and a pair of twins.{" "}
               <br />
               <br />
-              The Astronomer's House comfortably fits a single resident across
-              two floors. The ground level contains a kitchenette, living room,
-              office, and full and half bathrooms, while the top floor functions
-              as both a primary bedroom and a personal observatory. The
-              observatory volume rotates around the central stair core, allowing
-              the astronomer to track any part of the night sky. When rotated,
-              it opens onto a rooftop terrace above the first floor.
+              The Astronomer&apos;s House comfortably fits a single resident
+              across two floors. The ground level contains a kitchenette, living
+              room, office, and full and half bathrooms, while the top floor
+              functions as both a primary bedroom and a personal observatory.
+              The observatory volume rotates around the central stair core,
+              allowing the astronomer to track any part of the night sky. When
+              rotated, it opens onto a rooftop terrace above the first floor.
               <br />
               <br /> The Twin House is organized around a single governing idea:
               perfect bilateral symmetry. The double-height foyer announces this

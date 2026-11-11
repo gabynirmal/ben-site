@@ -3,14 +3,21 @@ import { Flex, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
 export default function EssenceOfBoston() {
   return (
     <Grid
-      templateColumns="repeat(5, 1fr)"
-      templateRows="repeat(3, 1fr)"
+      templateColumns={{ base: "1fr", md: "repeat(5, 1fr)" }}
+      templateRows={{ base: "auto 1fr", md: "repeat(3, 1fr)" }}
       paddingTop="62px"
       h="100vh"
       px={{ base: "10", md: "30px" }}
       gap="30px"
     >
-      <GridItem display="flex" flexDirection="column" gap="20px" pt="20px">
+      <GridItem
+        colSpan={{ base: 1, md: 1 }}
+        rowSpan={{ base: 1, md: 3 }}
+        display="flex"
+        flexDirection="column"
+        gap="20px"
+        pt="20px"
+      >
         <Flex flexDirection="column">
           <Heading size="2xl" letterSpacing="wide" fontWeight="500">
             ESSENCE OF BOSTON
@@ -28,13 +35,24 @@ export default function EssenceOfBoston() {
           element.
         </Text>
       </GridItem>
-      <GridItem colSpan={4} rowSpan={3} mt="-2">
+
+      <GridItem
+        colSpan={{ base: 1, md: 4 }}
+        rowSpan={{ base: 1, md: 3 }}
+        mt={{ base: "0", md: "-2" }}
+        h={{ base: "50vh", md: "100%" }}
+      >
         <iframe
           allowFullScreen={true}
           allow="clipboard-write"
           className="fp-iframe"
           src="https://heyzine.com/flip-book/c3ecf00031.html"
-          style={{ width: "100%", height: "100%" }}
+          style={{
+            width: "100%",
+            height: "100%",
+            border: "none",
+            pointerEvents: "auto",
+          }}
         ></iframe>
       </GridItem>
     </Grid>

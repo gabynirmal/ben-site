@@ -42,6 +42,8 @@ export default function Personal() {
               bg="transparent"
               color={"var(--foreground)"}
               _hover={{ color: "var(--link-hover)" }}
+              _active={{ color: "var(--link-hover)" }}
+              transition="color 0.2s ease-in-out"
               aria-label="Scroll to projects"
             >
               <Icon boxSize="2rem">

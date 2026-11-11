@@ -7,29 +7,34 @@ export default function OlmstedPamphlet() {
       <Box
         position="relative"
         w="100%"
-        px={{ base: "10", md: "30px" }}
+        px={{ base: "4", md: "30px" }}
+        pb="30px"
         style={{ paddingTop: "62px" }}
       >
         {/* Top Section: Locked to 100vh (minus navbar offset) */}
         <Grid
           id="bs-design-olmsted-pamphlet"
           templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
-          gap="30px"
+          gap={{ base: "16px", md: "30px" }}
           w="100%"
-          h={{ base: "auto", md: "calc(100vh - 62px)" }}
+          h={{ base: "auto", md: "calc(100dvh - 62px)" }}
           py="20px"
         >
           <GridItem colSpan={1} h="100%" display="flex" flexDirection="column">
             <Flex direction="column" gap="15px" pb="15px">
               <Heading
-                size="2xl"
+                size={{ base: "xl", md: "2xl" }}
                 letterSpacing="wide"
                 fontWeight="500"
                 color="var(--emphasis)"
               >
                 FREDERICK LAW OLMSTED PARK PAMPHLET
               </Heading>
-              <Text as="p" textStyle="2xl" fontStyle="italic">
+              <Text
+                as="p"
+                textStyle={{ base: "lg", md: "2xl" }}
+                fontStyle="italic"
+              >
                 2026 | Z-Fold Pamphlet
               </Text>
             </Flex>

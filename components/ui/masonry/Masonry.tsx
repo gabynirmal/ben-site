@@ -19,7 +19,7 @@ export default function Masonry({
   db: MasonryTile[];
   folder: string;
 }) {
-  const gallerySpacing = "30px";
+  const gallerySpacing = { base: "16px", md: "30px" };
 
   return (
     <Grid
@@ -43,6 +43,10 @@ export default function Masonry({
               "& .overlay": { opacity: 1 },
               ...(!project?.link && { transform: "scale(1.06)" }),
             }}
+            _active={{
+              "& .overlay": { opacity: 1 },
+              ...(!project?.link && { transform: "scale(1.03)" }),
+            }}
             css={{ breakInside: "avoid" }}
           >
             <Image
@@ -62,7 +66,7 @@ export default function Masonry({
                 w="100%"
                 h="100%"
                 bg="blackAlpha.600"
-                opacity={0}
+                opacity={{ base: 1, md: 0 }}
                 transition="opacity 0.3s ease"
                 display="flex"
                 alignItems="center"
@@ -70,12 +74,12 @@ export default function Masonry({
                 zIndex={1}
               >
                 <Heading
-                  size="2xl"
+                  size={{ base: "md", md: "2xl" }}
                   fontWeight={500}
                   letterSpacing="wide"
                   color="white"
                   textAlign="center"
-                  p="20px"
+                  p={{ base: "10px", md: "20px" }}
                 >
                   {project.title}
                 </Heading>

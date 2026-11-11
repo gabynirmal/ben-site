@@ -20,10 +20,12 @@ export default function MasonryItem({
   const itemRef = useRef<HTMLDivElement>(null);
 
   const calculateSpan = () => {
-    if (itemRef.current) {
-      const height = itemRef.current.getBoundingClientRect().height;
-      setRowSpan(Math.ceil((height + GAP) / ROW_HEIGHT));
-    }
+    window.requestAnimationFrame(() => {
+      if (itemRef.current) {
+        const height = itemRef.current.getBoundingClientRect().height;
+        setRowSpan(Math.ceil((height + GAP) / ROW_HEIGHT));
+      }
+    });
   };
 
   useEffect(() => {
@@ -82,7 +84,10 @@ export default function MasonryItem({
   );
 
   return (
-    <GridItem rowSpan={rowSpan} colSpan={colSpan}>
+    <GridItem
+      rowSpan={rowSpan}
+      colSpan={{ base: Math.min(colSpan, 2), md: colSpan }}
+    >
       {link ? <Link href={link}>{inner}</Link> : inner}
     </GridItem>
   );

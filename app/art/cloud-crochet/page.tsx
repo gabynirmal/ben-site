@@ -4,18 +4,25 @@ import Image from "next/image";
 export default function CloudCrochet() {
   return (
     <>
-      <Box position="relative" h="100vh">
+      <Box
+        position="relative"
+        h={{ base: "auto", md: "100dvh" }}
+        style={{ paddingTop: "62px" }}
+      >
         <Grid
           id="bs-art-cloud-crochet"
-          templateRows="repeat(4, 1fr)"
-          paddingBottom="20px"
-          px={{ base: "10", md: "30px" }}
-          gap="30px"
-          h="100%"
+          templateRows={{ base: "auto", md: "repeat(4, 1fr)" }}
+          pb="20px"
+          px={{ base: "4", md: "30px" }}
+          gap={{ base: "16px", md: "30px" }}
+          h={{ base: "auto", md: "calc(100dvh - 62px)" }}
           w="100%"
-          pt="68px"
         >
-          <GridItem rowSpan={3}>
+          <GridItem
+            rowSpan={{ base: 1, md: 3 }}
+            h={{ base: "320px", md: "auto" }}
+            minH={{ base: "320px", md: "0" }}
+          >
             <Box position="relative" h="100%" w="100%">
               <Image
                 src="/art/cloud-crochet/cloudnoback.png"
@@ -27,16 +34,26 @@ export default function CloudCrochet() {
             </Box>
           </GridItem>
           <GridItem rowSpan={1}>
-            <Flex justifyContent="space-between" pb="15px">
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              justifyContent="space-between"
+              gap={{ base: "4px", md: "16px" }}
+              pb="15px"
+            >
               <Heading
-                size="2xl"
+                size={{ base: "xl", md: "2xl" }}
                 letterSpacing="wide"
                 fontWeight="500"
                 color="var(--emphasis)"
               >
                 EYES OF THE WORLD
               </Heading>
-              <Text as="p" textStyle="2xl" fontStyle="italic">
+              <Text
+                as="p"
+                textStyle={{ base: "lg", md: "2xl" }}
+                fontStyle="italic"
+                flexShrink={0}
+              >
                 2023 | Crochet
               </Text>
             </Flex>

@@ -1,15 +1,10 @@
 "use client";
 
-import Masonry from "@/components/ui/masonry/Masonry";
 import { Flex, Grid, GridItem, Heading, Text, Box } from "@chakra-ui/react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import * as db from "../../data";
 
 export default function PennyCrochet() {
-  const art = db.art;
-  const thisProject = art.find((p) => p.link === "/art/penny-crochet");
-
   const [mainImage, setMainImage] = useState("Pennyfront.png");
   const [pageLoaded, setPageLoaded] = useState(false);
   const images = [
@@ -25,7 +20,11 @@ export default function PennyCrochet() {
   }, []);
 
   return (
-    <Box position="relative" h="100vh" style={{ paddingTop: "62px" }}>
+    <Box
+      position="relative"
+      h={{ base: "auto", md: "100dvh" }}
+      style={{ paddingTop: "62px" }}
+    >
       <style>{`
           @keyframes scalePop {
             0% { transform: scale(1); }
@@ -36,25 +35,38 @@ export default function PennyCrochet() {
 
       <Grid
         id="bs-art-penny-crochet"
-        templateColumns="repeat(6, minmax(0, 1fr))"
-        templateRows="minmax(0, 1fr)"
+        templateColumns={{
+          base: "1fr",
+          md: "repeat(6, minmax(0, 1fr))",
+        }}
+        templateRows={{ base: "auto", md: "minmax(0, 1fr)" }}
         py="20px"
-        px={{ base: "10", md: "30px" }}
-        gap="30px"
-        h="100%"
+        px={{ base: "4", md: "30px" }}
+        gap={{ base: "16px", md: "30px" }}
+        h={{ base: "auto", md: "100%" }}
         w="100%"
       >
-        <GridItem colSpan={2}>
-          <Flex justifyContent="space-between" pb="15px">
+        <GridItem colSpan={{ base: 1, md: 2 }}>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            justifyContent="space-between"
+            gap={{ base: "4px", md: "16px" }}
+            pb="15px"
+          >
             <Heading
-              size="2xl"
+              size={{ base: "xl", md: "2xl" }}
               letterSpacing="wide"
               fontWeight="500"
               color="var(--emphasis)"
             >
               CROCHET FLOWER CROWN
             </Heading>
-            <Text as="p" textStyle="2xl" fontStyle="italic">
+            <Text
+              as="p"
+              textStyle={{ base: "lg", md: "2xl" }}
+              fontStyle="italic"
+              flexShrink={0}
+            >
               2023 | Crochet
             </Text>
           </Flex>
@@ -65,17 +77,25 @@ export default function PennyCrochet() {
             and vines, about 30 hours of work in total. She wore it awkwardly.
           </Text>
 
-          <Grid templateColumns="repeat(3, minmax(0, 1fr))" gap="20px">
+          <Grid
+            templateColumns={{
+              base: "repeat(5, minmax(0, 1fr))",
+              md: "repeat(3, minmax(0, 1fr))",
+            }}
+            gap={{ base: "10px", md: "20px" }}
+          >
             {images.map((img, i) => (
               <Box
                 key={img}
                 position="relative"
                 aspectRatio={1}
-                transition="transform 0.3s ease-in-out, scale 0.3s ease-in-out"
+                transition="transform 0.3s ease-in-out, opacity 0.2s ease-in-out"
                 animation={pageLoaded ? "scalePop 0.6s ease-in-out" : "none"}
                 animationDelay={`${i * 200}ms`}
                 animationFillMode="both"
-                _hover={{ scale: 1.1 }}
+                opacity={mainImage === img ? 1 : 0.7}
+                _hover={{ transform: "scale(1.1)", opacity: 1 }}
+                _active={{ transform: "scale(1.05)", opacity: 1 }}
               >
                 <Image
                   src={`/art/penny-crochet/${img}`}
@@ -90,7 +110,12 @@ export default function PennyCrochet() {
           </Grid>
         </GridItem>
 
-        <GridItem position="relative" colSpan={4}>
+        <GridItem
+          position="relative"
+          colSpan={{ base: 1, md: 4 }}
+          h={{ base: "360px", md: "auto" }}
+          minH={{ base: "360px", md: "0" }}
+        >
           <Image
             src={`/art/penny-crochet/${mainImage}`}
             fill

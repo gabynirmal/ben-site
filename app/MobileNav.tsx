@@ -3,13 +3,21 @@
 import { Flex, Icon, Button, Heading, Box, Portal } from "@chakra-ui/react";
 import Link from "next/link";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function MobileNav() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigation = ["ARCHITECTURE", "DESIGN", "ART", "ABOUT"];
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   return (
     <>
       <Portal>
@@ -17,6 +25,7 @@ export default function MobileNav() {
           w="100%"
           h="100%"
           position="fixed"
+          inset="0"
           px={{ base: "4", md: "30px" }}
           bgColor="rgba(29, 33, 40, 0.8)"
           backdropFilter="blur(5px)"
@@ -26,10 +35,10 @@ export default function MobileNav() {
           pointerEvents={isMenuOpen ? "auto" : "none"}
           transition="opacity 0.3s ease-in-out"
         >
-          <Flex alignItems="end" justifyContent="space-between" py="15px">
-            <Link href="/">
+          <Flex alignItems="center" justifyContent="space-between" py="15px">
+            <Link href="/" onClick={() => setIsMenuOpen(false)}>
               <Heading
-                size="3xl"
+                size={{ base: "xl", md: "2xl", lg: "3xl" }}
                 fontWeight="500"
                 letterSpacing="wide"
                 whiteSpace="nowrap"
@@ -39,7 +48,12 @@ export default function MobileNav() {
                 _hover={
                   pathname === "/"
                     ? { color: "var(--emphasis-opp)" }
-                    : { color: "var(--link-hover)" }
+                    : { color: "var(--link-hover-opp)" }
+                }
+                _active={
+                  pathname === "/"
+                    ? { color: "var(--emphasis-opp)" }
+                    : { color: "var(--link-hover-opp)" }
                 }
                 transition="color 0.2s ease-in-out"
               >
@@ -49,7 +63,9 @@ export default function MobileNav() {
             <Button
               alignItems="center"
               justifyContent="center"
-              boxSize="40px"
+              minW="44px"
+              minH="44px"
+              boxSize="44px"
               borderRadius="full"
               bgColor="transparent"
               color="var(--background)"
@@ -59,12 +75,13 @@ export default function MobileNav() {
               _active={{
                 color: "var(--link-hover-opp)",
               }}
-              transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out opacity 0.3s ease-in-out"
+              transition="color 0.2s ease-in-out, opacity 0.3s ease-in-out"
               opacity={isMenuOpen ? 1 : 0}
               pointerEvents={isMenuOpen ? "auto" : "none"}
               onClick={() => setIsMenuOpen(false)}
+              aria-label="Close menu"
             >
-              <Icon boxSize="4rem">
+              <Icon boxSize="2rem">
                 <IoIosClose />
               </Icon>
             </Button>
@@ -76,7 +93,6 @@ export default function MobileNav() {
             direction="column"
             gap="6"
             pb="15px"
-            mt="-100px"
           >
             {navigation.map((link: string) => (
               <Link
@@ -85,7 +101,7 @@ export default function MobileNav() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Heading
-                  size="4xl"
+                  size={{ base: "3xl", md: "4xl" }}
                   fontWeight="500"
                   letterSpacing="wide"
                   color={
@@ -94,6 +110,11 @@ export default function MobileNav() {
                       : "var(--background)"
                   }
                   _hover={
+                    pathname.includes(link.toLowerCase())
+                      ? { color: "var(--emphasis)" }
+                      : { color: "var(--link-hover-opp)" }
+                  }
+                  _active={
                     pathname.includes(link.toLowerCase())
                       ? { color: "var(--emphasis)" }
                       : { color: "var(--link-hover-opp)" }
@@ -111,18 +132,21 @@ export default function MobileNav() {
       <Button
         alignItems="center"
         justifyContent="center"
-        boxSize="40px"
+        minW="44px"
+        minH="44px"
+        boxSize="44px"
         borderRadius="full"
         bgColor="transparent"
         color="var(--foreground)"
         _hover={{ color: "var(--link-hover)" }}
         _active={{ color: "var(--link-hover)" }}
-        transition="background-color 0.2s ease-in-out, color 0.2s ease-in-out opacity 0.3s ease-in-out"
+        transition="color 0.2s ease-in-out, opacity 0.3s ease-in-out"
         opacity={isMenuOpen ? 0 : 1}
         pointerEvents={isMenuOpen ? "none" : "auto"}
         onClick={() => setIsMenuOpen(true)}
+        aria-label="Open menu"
       >
-        <Icon boxSize="3rem">
+        <Icon boxSize="1.75rem">
           <IoIosMenu />
         </Icon>
       </Button>

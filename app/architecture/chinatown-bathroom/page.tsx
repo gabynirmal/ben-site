@@ -13,19 +13,28 @@ export default function ChinatownBathroom() {
 
   return (
     <>
-      <Box position="relative" h="100vh" style={{ paddingTop: "62px" }}>
+      <Box
+        position="relative"
+        h={{ base: "auto", md: "100dvh" }}
+        style={{ paddingTop: "62px" }}
+      >
         <Grid
           id="bs-arch-chinatown-bathroom"
-          templateColumns="repeat(3, 1fr)"
-          templateRows="repeat(4, 1fr)"
+          templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
+          templateRows={{ base: "auto", md: "repeat(4, 1fr)" }}
           py="20px"
-          px={{ base: "10", md: "30px" }}
-          gap="30px"
-          h="100%"
+          px={{ base: "4", md: "30px" }}
+          gap={{ base: "16px", md: "30px" }}
+          h={{ base: "auto", md: "100%" }}
           w="100%"
         >
-          <GridItem position="relative" colSpan={1} rowSpan={2}>
-            {" "}
+          <GridItem
+            position="relative"
+            colSpan={1}
+            rowSpan={{ base: 1, md: 2 }}
+            h={{ base: "220px", md: "auto" }}
+            order={{ base: 2, md: 0 }}
+          >
             <Image
               src="/architecture/bpl-bathroom/BathroomPerspective.jpeg"
               fill
@@ -34,8 +43,13 @@ export default function ChinatownBathroom() {
               loading="eager"
             />
           </GridItem>
-          <GridItem position="relative" colSpan={1} rowSpan={2}>
-            {" "}
+          <GridItem
+            position="relative"
+            colSpan={1}
+            rowSpan={{ base: 1, md: 2 }}
+            h={{ base: "220px", md: "auto" }}
+            order={{ base: 3, md: 0 }}
+          >
             <Image
               src="/architecture/bpl-bathroom/BathroomPerspective3.jpeg"
               fill
@@ -44,7 +58,12 @@ export default function ChinatownBathroom() {
               loading="eager"
             />
           </GridItem>
-          <GridItem rowSpan={4} position="relative">
+          <GridItem
+            rowSpan={{ base: 1, md: 4 }}
+            position="relative"
+            h={{ base: "280px", md: "auto" }}
+            order={{ base: 4, md: 0 }}
+          >
             <Image
               src="/architecture/bpl-bathroom/BathroomPerspective2.jpeg"
               fill
@@ -53,17 +72,31 @@ export default function ChinatownBathroom() {
               loading="eager"
             />
           </GridItem>
-          <GridItem colSpan={2} rowSpan={2}>
-            <Flex justifyContent="space-between" pb="15px">
+          <GridItem
+            colSpan={{ base: 1, md: 2 }}
+            rowSpan={{ base: 1, md: 2 }}
+            order={{ base: 1, md: 0 }}
+          >
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              justifyContent="space-between"
+              gap={{ base: "4px", md: "16px" }}
+              pb="15px"
+            >
               <Heading
-                size="2xl"
+                size={{ base: "xl", md: "2xl" }}
                 letterSpacing="wide"
                 fontWeight="500"
                 color="var(--emphasis)"
               >
                 THE CHINATOWN BACKYARD
               </Heading>
-              <Text as="p" textStyle="2xl" fontStyle="italic">
+              <Text
+                as="p"
+                textStyle={{ base: "lg", md: "2xl" }}
+                fontStyle="italic"
+                flexShrink={0}
+              >
                 2026 | Public Bathroom & Community Garden
               </Text>
             </Flex>
@@ -77,11 +110,13 @@ export default function ChinatownBathroom() {
                 alignItems="center"
                 color="var(--foreground)"
                 _hover={{ color: "var(--link-hover)" }}
+                _active={{ color: "var(--link-hover)" }}
+                transition="color 0.2s ease-in-out"
               >
                 <FaMapPin />
                 <Text
                   as="p"
-                  textStyle="xl"
+                  textStyle={{ base: "md", md: "xl" }}
                   textDecoration="underline"
                   textDecorationThickness="1px"
                 >
@@ -110,7 +145,12 @@ export default function ChinatownBathroom() {
             </Text>
           </GridItem>
 
-          <GridItem position="relative" rowSpan={2} colSpan={2} />
+          <GridItem
+            position="relative"
+            rowSpan={{ base: 1, md: 2 }}
+            colSpan={{ base: 1, md: 2 }}
+            display={{ base: "none", md: "block" }}
+          />
         </Grid>
       </Box>
 

@@ -9,11 +9,11 @@ export default function AboutDev() {
           cursor="pointer"
           zIndex="max"
           position="fixed"
-          bottom="20px"
-          right="20px"
+          bottom="calc(20px + env(safe-area-inset-bottom, 0px))"
+          right="calc(20px + env(safe-area-inset-right, 0px))"
           alignItems="center"
           justifyContent="center"
-          boxSize="40px"
+          boxSize={{ base: "36px", md: "40px" }}
           borderRadius="full"
           bgColor="var(--link-hover)"
           overflow="hidden"
@@ -21,7 +21,7 @@ export default function AboutDev() {
             "& img": {
               transition: "filter 0.2s ease-in-out",
             },
-            "&:hover img": {
+            "&:hover img, &:active img": {
               filter: "brightness(0.8)",
             },
           }}

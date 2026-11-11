@@ -13,9 +13,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "franklin-gothic-atf", sans-serif;
+  overflow-x: clip;
   transition:
     background-color 0.3s ease,
     color 0.3s ease !important;
+}
+
+html,
+body {
+  max-width: 100%;
 }
 
 p {

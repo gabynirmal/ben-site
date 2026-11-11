@@ -87,8 +87,8 @@ export default function Home() {
           position="absolute"
           direction="column"
           gap="6px"
-          bottom={{ base: "40px", md: "30px" }}
-          left={{ base: "4", md: "30px" }}
+          bottom={{ base: "10px", md: "30px" }}
+          left={{ base: "10px", md: "30px" }}
           zIndex={20}
           maxW={{ base: "85%", md: "420px" }}
           w="fit-content"
@@ -101,11 +101,15 @@ export default function Home() {
           bg="rgba(200, 200, 200, 0.2)"
           backdropFilter="blur(6px)"
         >
-          <Text fontSize="lg" letterSpacing="widest" fontWeight="600">
+          <Text
+            fontSize={{ base: "sm", md: "lg" }}
+            letterSpacing="widest"
+            fontWeight="600"
+          >
             FEATURED PROJECT
           </Text>
           <Heading
-            size="2xl"
+            size={{ base: "xl", md: "2xl" }}
             fontWeight="500"
             letterSpacing="wide"
             color="var(--emphasis)"
@@ -115,7 +119,7 @@ export default function Home() {
             <br />
             CHINATOWN LIBRARY
           </Heading>
-          <Flex gap={6} justifyContent="flex-start" mt={2}>
+          <Flex gap={{ base: 4, md: 6 }} justifyContent="flex-start" mt={2}>
             <Link href="/architecture/chinatown-library">
               <Text
                 fontSize="sm"
@@ -124,6 +128,10 @@ export default function Home() {
                 borderBottom="1px solid"
                 pb="2px"
                 _hover={{
+                  color: "var(--link-hover)",
+                  borderColor: "var(--link-hover)",
+                }}
+                _active={{
                   color: "var(--link-hover)",
                   borderColor: "var(--link-hover)",
                 }}
@@ -143,6 +151,10 @@ export default function Home() {
                   color: "var(--link-hover)",
                   borderColor: "var(--link-hover)",
                 }}
+                _active={{
+                  color: "var(--link-hover)",
+                  borderColor: "var(--link-hover)",
+                }}
                 transition="color 0.2s ease, border-color 0.2s ease"
               >
                 ALL ARCHITECTURE
@@ -151,17 +163,23 @@ export default function Home() {
           </Flex>
         </Flex>
 
-        {/* Instructions footer — Always visible */}
+        {/* Instructions footer */}
         <Flex
           position="absolute"
-          bottom="10px"
+          bottom={{ base: "8px", md: "10px" }}
           w="100%"
           justifyContent="center"
           zIndex={20}
-          display={{ base: "none", md: "flex" }}
           pointerEvents="none"
+          px="4"
         >
-          <Text mt={4} fontSize="sm" letterSpacing="wide" textAlign="center">
+          <Text
+            mt={{ base: 0, md: 4 }}
+            fontSize={{ base: "xs", md: "sm" }}
+            letterSpacing="wide"
+            textAlign="center"
+            display={{ base: "none", md: "block" }}
+          >
             CLICK CANVAS TO EXPLORE | WASD TO MOVE |
             <br />
             SPACE/SHIFT FOR UP/DOWN | ESC TO EXIT
